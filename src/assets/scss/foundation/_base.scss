@@ -3,38 +3,42 @@
 //fonts setting
 
 body {
-    width: 100%;
-    min-width: rem(320px);
-    height: 100%;
-    margin: 0 auto;
-    background-color: $color-base;
-    color: $color-text;
-    font-weight: 400;
-    font-size: rem(16px);
-    line-height: 1.5;
-    font-family: $font-yugothic;
-    letter-spacing: .05em;
+  width: 100%;
+  min-width: rem(320px);
+  height: 100%;
+  margin: 0 auto;
+  background-color: $color-base;
+  color: $color-text;
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: 2;
+  font-family: $font-yumincho;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-img, video, object {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: unset;
+img,
+video,
+object {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: unset;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
 
-    &:hover {
-        text-decoration: none;
-    }
+a:hover {
+  text-decoration: none;
 }
 
 a:hover img {
-    opacity: .8;
-    text-decoration: none;
-    transition: all .3s;
+  @include responsive(lg, max) {
+    opacity: 1;
+  }
+  opacity: 0.8;
+  text-decoration: none;
+  transition: all 0.3s;
 }
