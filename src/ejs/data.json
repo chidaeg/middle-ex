@@ -1,0 +1,18 @@
+{
+  "siteInfo": {
+    "name": "タイトル",
+    "siteUrl": "sample.com",
+    "path": {
+      "css": "./assets/css/",
+      "img": "./assets/img/",
+      "js": "./assets/js/",
+      "font": "./assets/font/"
+    }
+  },
+  "pages": {
+    "home": {
+      "title": "タイトル",
+      "description": "デスクリプション"
+    }
+  }
+}

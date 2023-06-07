@@ -1,0 +1,10 @@
+@use "../../foundation/_variable" as *;
+
+// 基本のラベル
+.c-label {
+    display: inline-block;
+    padding: 0 rem(6px);
+    background-color: #666666;
+    color: #ffffff;
+    font-size: rem(12px);
+}

@@ -1,0 +1,29 @@
+{
+  "name": "202305-qrec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon -e ejs -x \"npm run ejs \"",
+    "ejs": "ejs-cli --base-dir src/ejs \"/**/[!^_]*.ejs\" --out ./dist/ -O src/ejs/data.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-cli": "^2.2.3",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "stylelint": "^15.5.0",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-sass-guidelines": "^10.0.0",
+    "stylelint-config-standard": "^33.0.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1"
+  }
+}

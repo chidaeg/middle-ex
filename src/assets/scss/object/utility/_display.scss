@@ -1,0 +1,24 @@
+@use "../../foundation/_variable" as *;
+
+// spで非表示、pcで表示
+.u-sp-none {
+    @include responsive(lg, max) {
+        display: none;
+    }
+}
+
+// pcで非表示、spで表示
+.u-pc-none {
+    @include responsive(lg, max) {
+        display: block;
+    }
+    display: none;
+}
+
+// pc横並び sp縦並び
+.u-pc-flex {
+    @include responsive(lg, max) {
+        display: block;
+    }
+    display: flex;
+}
