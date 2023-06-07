@@ -1,15 +1,15 @@
 @use "../foundation/_variable" as *;
 
 .l-footer {
-    width: 100%;
+  width: 100%;
 }
 
 .l-footer__inner {
-    @include responsive(lg, max) {
-        padding: 0 rem(16px);
-    }
-    width: 100%;
-    max-width: rem(1200px);
-    margin: 0 auto;
-    padding: 0 rem(20px);
+  @include responsive(lg, max) {
+    padding: 0 rem(16px);
+  }
+  width: 100%;
+  max-width: rem(1200px);
+  margin: 0 auto;
+  padding: 0 rem(20px);
 }
