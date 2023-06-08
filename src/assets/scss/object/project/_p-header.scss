@@ -1,1 +1,52 @@
 @use "../../foundation/_variable" as *;
+
+.p-header {
+  display: flex;
+  align-items: center;
+}
+.p-header__inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.p-header__logo {
+  @include responsive(lg, max) {
+    width: rem(140px);
+  }
+}
+
+.p-header__nav-list {
+  @include responsive(lg, max) {
+    display: none;
+  }
+  display: flex;
+  margin-left: min(120px, 10vw);
+
+  gap: rem(30px);
+}
+
+.p-header__btn {
+  @include responsive(lg, max) {
+    padding: rem(10px) rem(15px);
+    font-size: rem(14px);
+  }
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: rem(19px) rem(37px);
+  background-color: $color-btn;
+  line-height: 1;
+}
+.p-header__btn::before {
+  @include responsive(lg, max) {
+    width: rem(18px);
+    height: rem(18px);
+  }
+  display: block;
+  width: rem(22px);
+  height: rem(22px);
+  margin-right: rem(10px);
+  background: url("../img/common/icon-calendar.svg") no-repeat center
+    center/contain;
+  content: "";
+}
