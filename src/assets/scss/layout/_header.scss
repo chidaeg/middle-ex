@@ -12,6 +12,7 @@
   height: rem(80px);
   background-color: transparent;
   color: $color-base;
+  transition: background-color 0.3s;
 }
 
 .l-header__inner {
@@ -22,4 +23,8 @@
   max-width: rem(1920px);
   margin: 0 auto;
   padding: 0 rem(20px);
+}
+// スクロールしたら色が変わる
+.is-scrolled.l-header {
+  background-color: $color-base;
 }

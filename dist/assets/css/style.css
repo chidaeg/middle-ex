@@ -67,6 +67,8 @@ a:hover img {
   height: 5rem;
   background-color: transparent;
   color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 @media screen and (max-width: 1023px) {
   .l-header {
@@ -84,6 +86,10 @@ a:hover img {
   .l-header__inner {
     padding: 0 1rem;
   }
+}
+
+.is-scrolled.l-header {
+  background-color: #ffffff;
 }
 
 .l-main {
@@ -242,6 +248,12 @@ a:hover img {
   }
 }
 
+.is-scrolled .p-hamburger__line,
+.is-scrolled .p-hamburger__line::before,
+.is-scrolled .p-hamburger__line::after {
+  background-color: #000000;
+}
+
 .p-header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,6 +270,19 @@ a:hover img {
   .p-header__logo {
     width: 8.75rem;
   }
+}
+
+.p-header__logo-link {
+  position: relative;
+}
+
+.p-header__logo-img--after {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 @media screen and (max-width: 1023px) {
@@ -336,6 +361,22 @@ a:hover img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.is-scrolled .p-header__nav {
+  color: #000000;
+}
+
+.is-scrolled .p-header__logo-img {
+  color: #000000;
+}
+
+.is-scrolled .p-header__logo-img--before {
+  opacity: 0;
+}
+
+.is-scrolled .p-header__logo-img--after {
+  opacity: 1;
 }
 
 .p-footer__nav {

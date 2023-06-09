@@ -23,6 +23,23 @@
 
   {
     // ------------------------------------------
+    // スクロールでヘッダーの色を変える
+    // ------------------------------------------
+    const header = document.querySelector(".l-header");
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        header.classList.add("is-scrolled");
+      } else {
+        header.classList.remove("is-scrolled");
+      }
+    });
+  }
+
+  {
+    // ------------------------------------------
     // Topページ　お知らせのタブ切り替え
     // ------------------------------------------
     const tabBtns = document.querySelectorAll(".js-tab-btn");

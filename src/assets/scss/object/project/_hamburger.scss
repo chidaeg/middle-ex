@@ -65,3 +65,10 @@
     transform: translateY(0) rotate(-45deg);
   }
 }
+
+// スクロールしたら色が変わる
+.is-scrolled .p-hamburger__line,
+.is-scrolled .p-hamburger__line::before,
+.is-scrolled .p-hamburger__line::after {
+  background-color: $color-text;
+}
