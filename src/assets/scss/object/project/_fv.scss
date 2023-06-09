@@ -1,1 +1,101 @@
 @use "../../foundation/_variable" as *;
+.p-fv {
+  width: 100%;
+}
+.p-fv__img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.p-fv__img img {
+  min-width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+}
+.p-fv__img-heading {
+  @include responsive(lg, max) {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: max(rem(28px), 4.4vw);
+  }
+  position: absolute;
+  top: 50%;
+  left: 66%;
+  transform: translateY(-50%);
+  color: $color-base;
+  font-size: rem(34px);
+  line-height: 2.5;
+  letter-spacing: 0.3em;
+
+  writing-mode: vertical-rl;
+}
+.p-fv__message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../img/common/bg-white.jpg) center center;
+}
+.p-fv__message-inner {
+  @include responsive(md, max) {
+    flex-direction: column;
+    max-width: rem(400px);
+    padding: rem(80px) rem(16px);
+
+    gap: rem(24px);
+  }
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  max-width: rem(1000px);
+  margin: 0 auto;
+  padding: rem(149px) rem(40px) rem(120px);
+
+  // gap: min(rem(118px), 10vw);
+}
+.p-fv__message-title {
+  @include responsive(md, max) {
+    font-size: rem(22px);
+    line-height: 1.7;
+    letter-spacing: 0.5em;
+
+    writing-mode: horizontal-tb;
+  }
+  font-size: rem(28px);
+  line-height: 2.17;
+  letter-spacing: 0.7em;
+
+  writing-mode: vertical-rl;
+}
+.p-fv__message-title--up {
+  margin-top: rem(-95px);
+}
+.p-fv__message-text {
+  @include responsive(md, max) {
+    font-size: rem(14px);
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+
+    writing-mode: horizontal-tb;
+  }
+  line-height: 2.375;
+  letter-spacing: 0.4em;
+
+  writing-mode: vertical-rl;
+}
+.p-fv__message-name {
+  @include responsive(md, max) {
+    font-size: rem(18px);
+
+    writing-mode: horizontal-tb;
+  }
+  font-size: rem(22px);
+  letter-spacing: 0.4em;
+  text-align: right;
+
+  writing-mode: vertical-rl;
+}

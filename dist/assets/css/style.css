@@ -65,7 +65,7 @@ a:hover img {
   position: fixed;
   width: 100%;
   height: 5rem;
-  background-color: #777777;
+  background-color: transparent;
   color: #ffffff;
 }
 @media screen and (max-width: 1023px) {
@@ -107,8 +107,6 @@ a:hover img {
 }
 
 .l-footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background: url("../img/common/footer-bg.jpg");
 }
@@ -131,6 +129,148 @@ a:hover img {
   background-color: #666666;
   color: #ffffff;
   font-size: 0.75rem;
+}
+
+.p-fv {
+  width: 100%;
+}
+
+.p-fv__img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.p-fv__img img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-fv__img-heading {
+  position: absolute;
+  top: 50%;
+  left: 66%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 2.125rem;
+  line-height: 2.5;
+  letter-spacing: 0.3em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 1023px) {
+  .p-fv__img-heading {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: max(1.75rem, 4.4vw);
+  }
+}
+
+.p-fv__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url(../img/common/bg-white.jpg) center center;
+}
+
+.p-fv__message-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 9.3125rem 2.5rem 7.5rem;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 25rem;
+    padding: 5rem 1rem;
+    gap: 1.5rem;
+  }
+}
+
+.p-fv__message-title {
+  font-size: 1.75rem;
+  line-height: 2.17;
+  letter-spacing: 0.7em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-title {
+    font-size: 1.375rem;
+    line-height: 1.7;
+    letter-spacing: 0.5em;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.p-fv__message-title--up {
+  margin-top: -5.9375rem;
+}
+
+.p-fv__message-text {
+  line-height: 2.375;
+  letter-spacing: 0.4em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-text {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.p-fv__message-name {
+  font-size: 1.375rem;
+  letter-spacing: 0.4em;
+  text-align: right;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-name {
+    font-size: 1.125rem;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
 }
 
 @media screen and (max-width: 1023px) {
