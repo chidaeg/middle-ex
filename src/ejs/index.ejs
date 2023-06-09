@@ -6,6 +6,7 @@
     <%- include('./_inc/_header') %>
     <!-- l-main -->
     <div class="l-main">
+      <!-- p-fv -->
       <section class="p-fv">
         <div class="p-fv__img">
           <img
@@ -41,6 +42,9 @@
           </div>
         </div>
       </section>
+      <!-- End of .p-fv -->
+
+      <!-- .p-topics -->
       <div class="p-topics">
         <ul class="p-topics__inner">
           <li class="p-topics__section">
@@ -117,6 +121,72 @@
         </ul>
       </div>
       <!-- End of .p-topics -->
+      <section class="l-section p-plan">
+        <div class="l-section__inner p-plan__inner">
+          <h3 class="c-section-title">おすすめご宿泊プラン</h3>
+          <div class="p-plan__list-wrapper">
+            <ul class="p-plan__list">
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan01.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    朝食付きプラン、日本近海で取れた のどぐろを朝食として…
+                  </h4>
+                  <p class="p-plan__list-text">
+                    最高級と称されるのどぐろ、正式には「アカ
+                    ムツ」と呼ばれる魚、味は独特の上品な味わ
+                    いで、焼いても煮ても美味
+                  </p>
+                </div>
+                <!-- End of .p-plan__content -->
+              </li>
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan02.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    【期間限定】温海蟹をたっぷりと 愉しむプラン。
+                  </h4>
+                  <p class="p-plan__list-text">
+                    温海で水揚げされた蟹は「温海蟹」
+                    として知られ、嗜好品として愛されて
+                    きました。この宿泊プランでは存分に
+                  </p>
+                </div>
+                <!-- End of .p-plan__content -->
+              </li>
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan03.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    【平日限定】贅沢美味懐石プラン。 海辺の四季旬彩プラン。
+                  </h4>
+                  <p class="p-plan__list-text">
+                    温海近海で取れた魚を鮮度そのままに舟盛りに
+                    してご提供。生きた味をお楽しみください。
+                  </p>
+                </div>
+                <!-- End of .p-plan__content -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-plan -->
     </div>
     <!-- End of l-main -->
 
