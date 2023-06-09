@@ -5,18 +5,43 @@
     // SPメニュー表示
     // ------------------------------------------
 
-    const sp_menu = document.querySelector(".l-header");
-    const sp_btn = document.getElementById("js-hamburger-trigger");
+    const spMenu = document.querySelector(".l-header");
+    const spBtn = document.getElementById("js-hamburger-trigger");
     const links = document.querySelectorAll(".p-header__nav-list-item a");
 
     // ボタンでSPメニューを開閉
-    sp_btn.addEventListener("click", () => {
-      sp_menu.classList.toggle("is-open");
+    spBtn.addEventListener("click", () => {
+      spMenu.classList.toggle("is-open");
     });
 
     links.forEach((link) => {
       link.addEventListener("click", () => {
-        sp_menu.classList.remove("is-open");
+        spMenu.classList.remove("is-open");
+      });
+    });
+  }
+
+  {
+    // ------------------------------------------
+    // Topページ　お知らせのタブ切り替え
+    // ------------------------------------------
+    const tabBtns = document.querySelectorAll(".p-news__tab-btn");
+    const tabContents = document.querySelectorAll(".p-news__tab-content");
+
+    tabBtns.forEach((e) => {
+      e.addEventListener("click", () => {
+        const tabName = e.dataset.tab;
+
+        tabBtns.forEach((btn) => btn.classList.remove("is-active"));
+        e.classList.add("is-active");
+
+        tabContents.forEach((content) => {
+          if (content.id === tabName) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
     });
   }
