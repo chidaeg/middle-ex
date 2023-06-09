@@ -3,9 +3,40 @@
   <%- include('./_inc/_head') %>
 
   <body>
-    <%- include('./_inc/_header') %>
+    <section <%- include('./_inc/_header') %>
     <!-- l-main -->
-    <div class="l-main"></div>
+    <div class="l-main">
+      <section class="p-fv">
+        <div class="p-fv__img">
+          <img
+            src="<%= siteInfo.path.img.top %>mainbg01.jpg"
+            alt="頑張る人の頑張らない時間"
+          />
+          <h2 class="p-fv__img-heading">
+            <p>頑張る人の<br />頑張らない時間</p>
+          </h2>
+        </div>
+        <div class="p-fv__message">
+          <h3 class="p-fv__message-title">温海温泉の<br />美しさに癒されて</h3>
+          <p class="p-fv__message-text">
+            東北の奥座敷である温海温泉郷<br />
+            開湯は約１３００年前とされ、役小角が<br />
+            発見したと伝えられています
+          </p>
+          <p class="p-fv__message-text">
+            石井花壇は江戸より続く由緒ある旅館で<br />
+            クラシックな作りの中に大正ロマンあふれる<br />
+            内装を残しております
+          </p>
+          <p class="p-fv__message-text">
+            圧倒的な癒しの空間で<br />
+            頑張る現代人に<br />
+            頑張らない圧倒的な非日常をご提供します
+          </p>
+          <p class="p-fv__message-name">石井花壇</p>
+        </div>
+      </section>
+    </div>
     <!-- End of l-main -->
 
     <%- include('./_inc/_footer') %>

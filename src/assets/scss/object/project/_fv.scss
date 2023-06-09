@@ -1,1 +1,28 @@
 @use "../../foundation/_variable" as *;
+.p-fv {
+  width: 100%;
+}
+.p-fv__img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.p-fv__img img {
+  min-width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+}
+.p-fv__img-heading {
+  position: absolute;
+  top: 50%;
+  left: 66%;
+  transform: translateY(-50%);
+  color: $color-base;
+  font-size: rem(34px);
+  line-height: 2.5;
+  letter-spacing: 0.3em;
+
+  writing-mode: vertical-rl;
+}

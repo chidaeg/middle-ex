@@ -65,7 +65,7 @@ a:hover img {
   position: fixed;
   width: 100%;
   height: 5rem;
-  background-color: #777777;
+  background-color: transparent;
   color: #ffffff;
 }
 @media screen and (max-width: 1023px) {
@@ -107,8 +107,6 @@ a:hover img {
 }
 
 .l-footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background: url("../img/common/footer-bg.jpg");
 }
@@ -131,6 +129,39 @@ a:hover img {
   background-color: #666666;
   color: #ffffff;
   font-size: 0.75rem;
+}
+
+.p-fv {
+  width: 100%;
+}
+
+.p-fv__img {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.p-fv__img img {
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-fv__img-heading {
+  position: absolute;
+  top: 50%;
+  left: 66%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 2.125rem;
+  line-height: 2.5;
+  letter-spacing: 0.3em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
 
 @media screen and (max-width: 1023px) {
