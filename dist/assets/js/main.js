@@ -25,8 +25,8 @@
     // ------------------------------------------
     // Topページ　お知らせのタブ切り替え
     // ------------------------------------------
-    const tabBtns = document.querySelectorAll(".p-news__tab-btn");
-    const tabContents = document.querySelectorAll(".p-news__tab-content");
+    const tabBtns = document.querySelectorAll(".js-tab-btn");
+    const tabContents = document.querySelectorAll(".js-tab-content");
 
     tabBtns.forEach((e) => {
       e.addEventListener("click", () => {
