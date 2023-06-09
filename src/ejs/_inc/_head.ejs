@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><%= pages.home.title %></title>
-  <meta name="title" content="<%= pages.home.title %>" />
-  <meta name="description" content="<%= pages.home.description %>" />
+  <title><%= meta.title %></title>
+  <meta name="title" content="<%= meta.title %>" />
+  <meta name="description" content="<%= meta.description %>" />
   <!-- reset.css destyle -->
   <link
     rel="stylesheet"
@@ -14,6 +14,12 @@
   <!-- favicon -->
   <link rel="icon" href="<%= siteInfo.path.img %>favicon.svg" />
   <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <!-- Adobe font -->
   <!-- original css -->
   <link rel="stylesheet" href="<%= siteInfo.path.css %>style.css" />
