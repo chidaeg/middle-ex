@@ -107,18 +107,21 @@ a:hover img {
 }
 
 .l-footer {
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  background: url("../img/common/footer-bg.jpg");
 }
 
 .l-footer__inner {
   width: 100%;
-  max-width: 75rem;
+  max-width: 23.75rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 4rem 1.25rem 3.8125rem;
 }
 @media screen and (max-width: 1023px) {
   .l-footer__inner {
-    padding: 0 1rem;
+    padding: 2rem 0.625rem;
   }
 }
 
@@ -308,6 +311,93 @@ a:hover img {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+
+.p-footer__nav {
+  font-size: 1.125rem;
+}
+
+.p-footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.125rem;
+}
+
+.p-footer__nav-list-item {
+  letter-spacing: 1em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.p-footer-logo {
+  margin-top: 6rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-footer-logo {
+    margin-top: 3rem;
+  }
+}
+
+.p-footer-logo img {
+  margin: 0 auto;
+}
+
+.p-footer__access-wrapper {
+  margin-top: 4.5rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-footer__access-wrapper {
+    margin-top: 2rem;
+  }
+}
+
+.p-footer__access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.3125rem;
+  gap: 1.3125rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-footer__access {
+    font-size: 0.875rem;
+  }
+}
+
+.p-footer__access:first-child {
+  margin-top: 0;
+}
+
+.p-footer__access-text--wide {
+  letter-spacing: 0.18em;
+}
+
+.p-footer__copyright-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.75rem;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
