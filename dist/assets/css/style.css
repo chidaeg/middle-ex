@@ -173,6 +173,106 @@ a:hover img {
   }
 }
 
+.p-fv__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background: url(../img/common/bg-white.jpg) center center;
+}
+
+.p-fv__message-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  padding: 9.3125rem 2.5rem 7.5rem;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 25rem;
+    padding: 5rem 1rem;
+    gap: 1.5rem;
+  }
+}
+
+.p-fv__message-title {
+  font-size: 1.75rem;
+  line-height: 2.17;
+  letter-spacing: 0.7em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-title {
+    font-size: 1.375rem;
+    line-height: 1.7;
+    letter-spacing: 0.5em;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.p-fv__message-title--up {
+  margin-top: -5.9375rem;
+}
+
+.p-fv__message-text {
+  line-height: 2.375;
+  letter-spacing: 0.4em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-text {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    letter-spacing: 0.2em;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.p-fv__message-name {
+  font-size: 1.375rem;
+  letter-spacing: 0.4em;
+  text-align: right;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px) {
+  .p-fv__message-name {
+    font-size: 1.125rem;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .p-hamburger {
     display: -webkit-box;
