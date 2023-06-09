@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./_inc/_head',{meta: pages.room}) %>
+  <%- include('./_inc/_head', {meta: pages.room}) %>
 
   <body>
     <%- include('./_inc/_header-sub') %>
     <!-- l-main -->
-    <div class="l-main"></div>
+    <div class="l-main">
+      <%- include('./_inc/_page-title', {page: pageTitle.room}) %>
+    </div>
     <!-- End of l-main -->
 
     <%- include('./_inc/_footer') %>

@@ -1,18 +1,19 @@
 @use "../../foundation/_variable" as *;
 
-.c-section-title {
-  @include responsive(lg, max) {
-    font-size: rem(28px);
-  }
+.p-page-title {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  font-size: rem(36px);
+  width: 100%;
+  height: rem(500px);
+  padding-top: rem(80px);
 }
-.c-section-title::before {
-  display: block;
-  width: rem(40px);
-  height: rem(40px);
-  background: url(../img/common/icon-logo.svg) no-repeat center center;
-  content: "";
+
+.p-page-title__bg--room {
+  background: url(../img/room/room-header.jpg) center 80px / cover;
+}
+
+.p-page-title__title {
+  color: $color-base;
+  font-size: rem(34px);
 }
