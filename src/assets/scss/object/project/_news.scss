@@ -1,0 +1,82 @@
+@use "../../foundation/_variable" as *;
+
+.p-news {
+  background-color: $color-base;
+}
+
+.p-news__inner {
+  @include responsive(lg, max) {
+    max-width: rem(600px);
+    margin: 0 auto;
+  }
+  padding-bottom: rem(60px);
+}
+
+.p-news__body {
+  margin-top: rem(46px);
+}
+
+.p-news__tab {
+  text-align: center;
+}
+
+.p-news__tab-btn:last-child {
+  margin-left: rem(53px);
+}
+
+.p-news__tab-content {
+  display: none;
+  margin-top: rem(48px);
+}
+
+.p-news__cards {
+  @include responsive(lg, max) {
+    grid-template-columns: 1fr;
+  }
+  display: grid;
+  justify-content: space-between;
+
+  grid-template-columns: 1fr 1fr;
+  column-gap: rem(46px);
+  row-gap: rem(20px);
+}
+
+.p-news__card {
+  display: flex;
+  padding: rem(15px) rem(10px);
+  background-color: $color-gray;
+
+  gap: rem(30px);
+}
+
+.p-news__card-img {
+  flex-shrink: 0;
+  width: rem(103px);
+  height: rem(100px);
+}
+
+.p-news__card-img img {
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.p-news__card-content {
+  align-self: start;
+}
+
+.p-news__card-date {
+  display: block;
+  font-size: rem(14px);
+  line-height: 1;
+}
+
+.p-news__card-text {
+  margin-top: rem(10px);
+}
+
+// タブがアクティブの時
+
+.is-active.p-news__tab-btn {
+  text-decoration: underline;
+}
