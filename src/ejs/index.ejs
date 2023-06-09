@@ -121,6 +121,7 @@
         </ul>
       </div>
       <!-- End of .p-topics -->
+      <!-- .p-plan -->
       <section class="l-section p-plan">
         <div class="l-section__inner p-plan__inner">
           <h3 class="c-section-title">おすすめご宿泊プラン</h3>
@@ -143,7 +144,6 @@
                     いで、焼いても煮ても美味
                   </p>
                 </div>
-                <!-- End of .p-plan__content -->
               </li>
               <li class="p-plan__list-item">
                 <div class="p-plan__list-img">
@@ -162,7 +162,6 @@
                     きました。この宿泊プランでは存分に
                   </p>
                 </div>
-                <!-- End of .p-plan__content -->
               </li>
               <li class="p-plan__list-item">
                 <div class="p-plan__list-img">
@@ -180,13 +179,192 @@
                     してご提供。生きた味をお楽しみください。
                   </p>
                 </div>
-                <!-- End of .p-plan__content -->
               </li>
             </ul>
           </div>
         </div>
       </section>
       <!-- End of .p-plan -->
+
+      <!-- .p-news -->
+      <section class="l-section p-news">
+        <div class="l-section__inner p-news__inner">
+          <h3 class="c-section-title">お知らせ</h3>
+          <div class="p-news__body">
+            <div class="p-tab-menu">
+              <button class="p-tab-menu__button active" data-tab="sales">
+                営業情報
+              </button>
+              <button class="p-tab-menu__button" data-tab="others">
+                その他
+              </button>
+            </div>
+
+            <div class="p-tab-menu__content" id="sales">
+              <ul class="p-news__cards">
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      年末最後の営業日は27日になります。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">年末最後の営業日のお知らせ</p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      12.21は臨時休業とさせていただきますので、よろしくお願いします。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      年末最後の営業日は27日になります。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      和室の改装を行いますため、12.10はお休みさせていただきます。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">年末最後の営業日のお知らせ</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-tab-menu__content" id="others">
+              <ul class="p-news__cards">
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2020.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-21" class="p-news__card-date"
+                      >2020.12.21</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプランまもなく終了します！
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-16" class="p-news__card-date"
+                      >2020.12.16</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-15" class="p-news__card-date"
+                      >2020.12.15</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプラン好評です！
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-10" class="p-news__card-date"
+                      >2020.12.10</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-2" class="p-news__card-date"
+                      >2020.12.02</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプラン始まりました！
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-news -->
     </div>
     <!-- End of l-main -->
 
