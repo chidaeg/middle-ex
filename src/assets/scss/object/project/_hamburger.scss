@@ -1,1 +1,67 @@
 @use "../../foundation/_variable" as *;
+
+.p-hamburger {
+  @include responsive(lg, max) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // z-index: 100;
+    height: rem(40px);
+  }
+}
+.p-hamburger__line {
+  @include responsive(lg, max) {
+    display: block;
+    width: rem(20px);
+    height: rem(2px);
+    margin-left: rem(10px);
+    border-radius: 999px;
+    background-color: $color-base;
+    transition: all 0.3s;
+  }
+}
+.p-hamburger__line::before,
+.p-hamburger__line::after {
+  @include responsive(lg, max) {
+    display: block;
+    width: rem(20px);
+    height: rem(2px);
+    border-radius: 999px;
+    background-color: $color-base;
+    content: "";
+    transition: all 0.3s;
+  }
+}
+.p-hamburger__line::before {
+  @include responsive(lg, max) {
+    transform: translateY(rem(-8px));
+  }
+}
+.p-hamburger__line::after {
+  @include responsive(lg, max) {
+    transform: translateY(rem(6px));
+  }
+}
+// spメニューopenの時
+.is-open .p-hamburger__line {
+  @include responsive(lg, max) {
+    background-color: transparent;
+  }
+}
+.is-open .p-hamburger__line::before,
+.is-open .p-hamburger__line::after {
+  @include responsive(lg, max) {
+    background-color: $color-text;
+  }
+}
+.is-open .p-hamburger__line::before {
+  @include responsive(lg, max) {
+    transform: translateY(2px) rotate(45deg);
+  }
+}
+.is-open .p-hamburger__line::after {
+  @include responsive(lg, max) {
+    transform: translateY(0) rotate(-45deg);
+  }
+}
