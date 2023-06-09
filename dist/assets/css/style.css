@@ -163,6 +163,15 @@ a:hover img {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
 }
+@media screen and (max-width: 1023px) {
+  .p-fv__img-heading {
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: max(1.75rem, 4.4vw);
+  }
+}
 
 @media screen and (max-width: 1023px) {
   .p-hamburger {

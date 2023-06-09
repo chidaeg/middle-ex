@@ -15,6 +15,12 @@
   object-fit: cover;
 }
 .p-fv__img-heading {
+  @include responsive(lg, max) {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: max(rem(28px), 4.4vw);
+  }
   position: absolute;
   top: 50%;
   left: 66%;
