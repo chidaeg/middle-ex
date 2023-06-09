@@ -74,6 +74,10 @@ a:hover img {
   }
 }
 
+.l-header--sub {
+  background-color: #ffffff;
+}
+
 .l-header__inner {
   width: 100%;
   max-width: 120rem;
@@ -300,6 +304,10 @@ a:hover img {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
+}
+
+.p-header__nav--sub {
+  color: #000000;
 }
 
 .p-header__nav-list {

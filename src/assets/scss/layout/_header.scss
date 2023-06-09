@@ -14,6 +14,10 @@
   color: $color-base;
 }
 
+.l-header--sub {
+  background-color: $color-base;
+}
+
 .l-header__inner {
   @include responsive(lg, max) {
     padding: 0 rem(16px);
