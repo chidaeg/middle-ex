@@ -17,6 +17,7 @@ body {
   min-width: 20rem;
   height: 100%;
   margin: 0 auto;
+  overflow-y: scroll;
   background-color: #ffffff;
   color: #000000;
   font-weight: 400;
