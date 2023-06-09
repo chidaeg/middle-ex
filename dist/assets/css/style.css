@@ -273,6 +273,12 @@ a:hover img {
   }
 }
 
+.p-hamburger--sub .p-hamburger__line,
+.p-hamburger--sub .p-hamburger__line::before,
+.p-hamburger--sub .p-hamburger__line::after {
+  background-color: #000000;
+}
+
 .p-header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
