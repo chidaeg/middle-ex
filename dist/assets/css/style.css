@@ -891,6 +891,61 @@ a:hover img {
   text-decoration: underline;
 }
 
+.p-access {
+  background: url("../img/top/bg-white-large.jpg");
+}
+
+.p-access__inner {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-bottom: 6.875rem;
+}
+
+.p-access__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5.25rem;
+  gap: 5.1875rem;
+}
+@media screen and (max-width: 1023px) {
+  .p-access__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+.p-access__info-content {
+  line-height: 2.5;
+}
+@media screen and (max-width: 1023px) {
+  .p-access__info-content {
+    max-width: 37.5rem;
+    margin: 0 auto;
+  }
+}
+
+.p-access__map {
+  width: 100%;
+  margin-top: 4.3125rem;
+  text-align: center;
+  aspect-ratio: 16/9;
+}
+
+.p-access__map iframe {
+  width: 100%;
+  max-width: 49.5rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 1023px) {
   .u-sp-none {
     display: none;

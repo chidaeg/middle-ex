@@ -1,0 +1,56 @@
+@use "../../foundation/_variable" as *;
+
+.p-access {
+  background: url("../img/top/bg-white-large.jpg");
+}
+.p-access__inner {
+  max-width: rem(1200px);
+  margin: 0 auto;
+  padding-bottom: rem(110px);
+}
+.p-access__body {
+  // font-size: 12px;
+}
+.p-access__info {
+  @include responsive(lg, max) {
+    flex-direction: column;
+    align-items: center;
+
+    gap: rem(40px);
+  }
+  display: flex;
+  margin-top: rem(84px);
+
+  gap: rem(83px);
+}
+.p-access__info-img {
+  // font-size: 12px;
+}
+.p-access__info-content {
+  @include responsive(lg, max) {
+    max-width: rem(600px);
+    margin: 0 auto;
+  }
+  line-height: 2.5;
+}
+.p-access__info-list {
+  // font-size: 12px;
+}
+.p-access__info-name {
+  // font-size: 12px;
+}
+
+.p-access__map {
+  width: 100%;
+  margin-top: rem(69px);
+  text-align: center;
+
+  aspect-ratio: 16 / 9;
+}
+.p-access__map iframe {
+  width: 100%;
+  max-width: rem(792px);
+  height: 100%;
+
+  object-fit: cover;
+}
