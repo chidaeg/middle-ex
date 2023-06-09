@@ -1,8 +1,13 @@
 @use "../foundation/_variable" as *;
 
 .l-header {
+  @include responsive(lg, max) {
+    height: rem(60px);
+  }
+  // z-index: 120;
   display: flex;
   align-items: center;
+  position: fixed;
   width: 100%;
   height: rem(80px);
   background-color: #777777;

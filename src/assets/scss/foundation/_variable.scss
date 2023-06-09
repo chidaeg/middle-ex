@@ -46,3 +46,14 @@ $mq-breakpoints: (
 // }
 
 // z-index
+.l-header {
+  z-index: 120;
+}
+.p-header__nav {
+  @include responsive(lg, max) {
+    z-index: 100;
+  }
+}
+.p-hamburger {
+  z-index: 100;
+}
