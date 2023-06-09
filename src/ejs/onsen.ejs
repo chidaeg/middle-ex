@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./_inc/_head', {meta: pages.onsen}) %>
+
+  <body>
+    <%- include('./_inc/_header-sub') %>
+    <!-- l-main -->
+    <div class="l-main">
+      <%- include('./_inc/_page-title', {page: pageTitle.onsen}) %>
+    </div>
+    <!-- End of l-main -->
+
+    <%- include('./_inc/_footer') %>
+
+    <!-- original js -->
+    <script
+      type="text/javascript"
+      defer
+      src="<%= siteInfo.path.js %>main.js"
+    ></script>
+  </body>
+</html>
