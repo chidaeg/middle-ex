@@ -1,6 +1,9 @@
 @use "../../foundation/_variable" as *;
 
 .p-page-title {
+  @include responsive(lg, max) {
+    height: rem(300px);
+  }
   display: flex;
   justify-content: center;
   align-items: center;
