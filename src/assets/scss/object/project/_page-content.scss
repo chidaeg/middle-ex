@@ -1,7 +1,7 @@
 @use "../../foundation/_variable" as *;
 
 .p-page__body {
-  max-width: rem(1180px);
+  max-width: rem(1220px);
   margin: 0 auto;
   padding: rem(36px) rem(20px) rem(150px);
 }
@@ -15,4 +15,7 @@
 .p-page__media-wrapper {
   width: 100%;
   margin-top: rem(78px);
+}
+.p-page__media-wrapper > * + * {
+  margin-top: rem(84px);
 }
