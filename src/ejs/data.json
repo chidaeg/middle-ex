@@ -5,6 +5,7 @@
     "path": {
       "css": "./assets/css/",
       "img": {
+        "default": "./assets/img/",
         "top": "./assets/img/top/",
         "oheya": "./assets/img/oheya/",
         "menu": "./assets/img/menu/",
@@ -37,6 +38,42 @@
     "room": {
       "title": "お部屋",
       "class": "p-page-title__bg--room"
+    },
+    "menu": {
+      "title": "お料理",
+      "class": "p-page-title__bg--menu"
+    },
+    "onsen": {
+      "title": "温泉",
+      "class": "p-page-title__bg--onsen"
+    }
+  },
+  "subPageContent": {
+    "room": {
+      "lead": "創業より受け継がれてきた石井花壇の和の造り<br>温海の雄大な絶景を堪能していただけるように設計された客室<br>ゆるやかに流れ行く時間に身を委ねて",
+      "items": {
+        "item01": {
+          "title": "温泉付き客室",
+          "text": "温海の源泉かけ流し露天風呂付き客室になります。<br>あなただけの上質な安らぎのひとときを。",
+          "note": "＊部屋数に限りがございます。<br>＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。",
+          "img": "room/room01.jpg",
+          "class": "p-media"
+        },
+        "item02": {
+          "title": "庭園付き客室",
+          "text": "庭園付きの客室になります。<br>お庭を見ながら、ほっとするひとときをお過ごしください。",
+          "note": "＊お庭は複数のお客様と囲む形になります。<br>＊部屋数に限りがあります。<br>＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。",
+          "img": "room/room02.jpg",
+          "class": "p-media p-media--rev"
+        },
+        "item03": {
+          "title": "一般客室",
+          "text": "最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>内装となっており、とても過ごしやすくしていただけます。",
+          "note": "＊全室お部屋より日本海を望むことができます。",
+          "img": "room/room03.jpg",
+          "class": "p-media"
+        }
+      }
     },
     "menu": {
       "title": "お料理",
