@@ -1,19 +1,48 @@
 @use "../../foundation/_variable" as *;
 
 .p-media {
+  @include responsive(lg, max) {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: rem(36px);
+  }
   display: flex;
   justify-content: space-between;
 }
 
+.p-media::after {
+  @include responsive(lg, max) {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url("../img/common/bg-white.jpg") center / cover;
+    content: "";
+  }
+}
+
 .p-media--rev {
+  @include responsive(lg, max) {
+    flex-direction: column;
+  }
   flex-direction: row-reverse;
 }
 
 .p-media__img {
+  @include responsive(lg, max) {
+    width: 100%;
+  }
   width: rem(525px) / rem(1180px) * 100%;
 }
 
 .p-media__img img {
+  @include responsive(lg, max) {
+    width: 90%;
+    margin: 0 auto;
+  }
   max-width: 100%;
 
   aspect-ratio: 525 / 300;
@@ -21,6 +50,11 @@
 }
 
 .p-media__content {
+  @include responsive(lg, max) {
+    width: 100%;
+    margin-top: 0;
+    padding: 8%;
+  }
   position: relative;
   width: (rem(1180px) - rem(525px) - rem(80px)) / rem(1180px) * 100%;
   min-height: rem(381px);
@@ -29,7 +63,10 @@
 }
 
 .p-media__content::after {
-  display: flex;
+  @include responsive(lg, max) {
+    display: none;
+  }
+  display: block;
   position: absolute;
   top: 0;
   left: -40%;
@@ -41,29 +78,46 @@
 }
 
 .p-media--rev .p-media__content {
+  @include responsive(lg, max) {
+    padding-left: 8%;
+  }
   padding-left: rem(60px);
 }
+
 .p-media--rev .p-media__content::after {
   left: 0;
 }
 
 .p-media--content-wide .p-media__content {
+  @include responsive(lg, max) {
+    width: 100%;
+  }
   width: 52%;
 }
+
 .p-media--content-wide .p-media__content::after {
   width: 130%;
 }
 
 .p-media__title {
+  @include responsive(lg, max) {
+    line-height: 1.4;
+  }
   font-size: rem(24px);
   line-height: 1;
 }
 
 .p-media__text {
+  @include responsive(lg, max) {
+    margin-top: rem(28px);
+  }
   margin-top: calc(rem(52px) - rem(16px));
 }
 
 .p-media__note {
+  @include responsive(lg, max) {
+    margin-top: rem(28px);
+  }
   margin-top: calc(rem(52px) - rem(7px));
   font-size: rem(14px);
   line-height: 1.5;
