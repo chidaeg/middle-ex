@@ -10,10 +10,10 @@
       <div class="p-page__body">
         <%- include('./_inc/_breadcrumbs') %>
         <div class="p-page-lead__wrapper">
-          <p class="p-page-lead"><%- subPageContent.room.lead %></p>
+          <p class="p-page-lead"><%- pageContent.room.lead %></p>
         </div>
         <div class="p-media__wrapper">
-        <%- include('./_inc/_page-content', {items: subPageContent.room.items}) %>
+        <%- include('./_inc/_page-content', {items: pageContent.room.items}) %>
       </div>
     </div>
     <!-- End of l-main -->
