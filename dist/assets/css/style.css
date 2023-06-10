@@ -168,6 +168,11 @@ a:hover img {
   height: 31.25rem;
   padding-top: 5rem;
 }
+@media screen and (max-width: 1023px) {
+  .p-page-title {
+    height: 18.75rem;
+  }
+}
 
 .p-page-title__bg--room {
   background: url(../img/room/room-header.jpg) center 80px/cover;
