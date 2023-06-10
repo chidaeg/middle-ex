@@ -19,9 +19,9 @@
 -------------------*/
 @use "./object/component/section-title";
 @use "./object/component/page-title";
-@use "./object/component/search";
-@use "./object/component/label";
 @use "./object/component/breadcrumbs";
+// @use "./object/component/search";
+// @use "./object/component/label";
 /*-------------------
 * project
 -------------------*/
@@ -33,6 +33,7 @@
 @use "./object/project/plan";
 @use "./object/project/news";
 @use "./object/project/access";
+@use "./object/project/page-content";
 
 /*-------------------
 * Utility
