@@ -1,0 +1,18 @@
+@use "../../foundation/_variable" as *;
+
+.p-page__body {
+  max-width: rem(1180px);
+  margin: 0 auto;
+  padding: rem(36px) rem(20px) rem(150px);
+}
+
+.p-page__lead-wrapper {
+  width: 100%;
+  margin-top: rem(98px);
+  text-align: center;
+}
+
+.p-page__media-wrapper {
+  width: 100%;
+  margin-top: rem(78px);
+}
