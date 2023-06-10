@@ -7,6 +7,14 @@
     <!-- l-main -->
     <div class="l-main">
       <%- include('./_inc/_page-title', {page: pageTitle.menu}) %>
+      <div class="p-page__body">
+        <%- include('./_inc/_breadcrumbs') %>
+        <div class="p-page-lead__wrapper">
+          <p class="p-page-lead"><%- pageContent.menu.lead %></p>
+        </div>
+        <div class="p-media__wrapper">
+        <%- include('./_inc/_page-content', {items: pageContent.menu.items}) %>
+      </div>
     </div>
     <!-- End of l-main -->
 
