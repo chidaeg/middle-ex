@@ -21,6 +21,7 @@
 .p-page__media-wrapper {
   @include responsive(lg, max) {
     margin-top: rem(48px);
+    padding-bottom: rem(64px);
   }
   width: 100%;
   margin-top: rem(78px);
@@ -36,6 +37,10 @@
 
 // 温泉ページの効能部分
 .p-page__dl-wrapper {
+  @include responsive(lg, max) {
+    margin-bottom: rem(48px);
+    padding: rem(40px) 0 rem(32px);
+  }
   width: 100%;
   margin-bottom: rem(96.5px);
   padding: rem(95.5px) 0 rem(74px);

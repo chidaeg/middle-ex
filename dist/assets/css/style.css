@@ -1019,6 +1019,7 @@ a:hover img {
 @media screen and (max-width: 1023px) {
   .p-page__media-wrapper {
     margin-top: 3rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -1037,6 +1038,12 @@ a:hover img {
   padding: 5.96875rem 0 4.625rem;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+}
+@media screen and (max-width: 1023px) {
+  .p-page__dl-wrapper {
+    margin-bottom: 3rem;
+    padding: 2.5rem 0 2rem;
+  }
 }
 
 .p-page__dl {
