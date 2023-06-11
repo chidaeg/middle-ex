@@ -91,4 +91,17 @@
       delay: 100,
     });
   }
+
+  {
+    // ------------------------------------------
+    // flatpickr モーダル日付カレンダー選択
+    // ------------------------------------------
+    flatpickr("#js-datepicker", {
+      locale: "ja",
+      dateFormat: "Y.m.d（D）",
+      defaultDate: new Date(),
+      minDate: "today",
+      mode: "range",
+    });
+  }
 }
