@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .l-header {
   z-index: 120;
 }
@@ -189,6 +190,23 @@ a:hover img {
 .p-page-title__title {
   color: #ffffff;
   font-size: 2.125rem;
+}
+
+.c-breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-breadcrumbs__list > * + * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-breadcrumbs__list > * + * ::before {
+  margin: 0 0.5rem;
+  content: "＞";
 }
 
 @media screen and (max-width: 1023px) {

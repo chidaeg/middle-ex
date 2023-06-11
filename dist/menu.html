@@ -78,10 +78,32 @@
       <div class="p-page__body">
         <!-- breadcrumbs -->
 <div class="c-breadcrumbs-wrapper">
+  <!-- JSON-LDでの構造化データマークアップ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "トップ",
+          "item": "index.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "お料理",
+          "item": "./menu.html"
+        }
+      ]
+    }
+  </script>
+
   <ol class="c-breadcrumbs__list">
     <li class="c-breadcrumbs__list-item">
       <a href="index.html" class="c-breadcrumbs__list-link"
-        >TOP</a
+        >トップ</a
       >
     </li>
     <li class="c-breadcrumbs__list-item">
