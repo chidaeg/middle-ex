@@ -508,6 +508,38 @@ a:hover img {
      object-fit: cover;
 }
 
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+.swiper-slide-prev img,
+.swiper-slide-active img,
+.swiper-slide-dupulicate-active img {
+  -webkit-animation: zoomUp 5s linear 0s normal both;
+          animation: zoomUp 5s linear 0s normal both;
+}
+
 .p-fv__img-heading {
   position: absolute;
   top: 50%;

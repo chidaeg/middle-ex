@@ -31,10 +31,10 @@
       loop: true,
       effect: "fade",
       autoplay: {
-        delay: 4000,
+        delay: 3000,
         disableOnInteraction: false,
       },
-      speed: 2000,
+      speed: 1000,
     });
   }
 
