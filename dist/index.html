@@ -2,87 +2,91 @@
 <html lang="ja">
   <!-- head -->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
-    <meta name="title" content="石井花壇 | 温海温泉旅館【公式サイト】" />
-    <meta
-      name="description"
-      content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
-    />
-    <!-- favicon -->
-    <link rel="icon" href="[object Object]favicon.svg" />
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Adobe font -->
-    <!-- reset.css destyle -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
-    />
-    <!-- swiper css js  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <meta name="title" content="石井花壇 | 温海温泉旅館【公式サイト】" />
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
+  <!-- favicon -->
+  <link rel="icon" href="[object Object]favicon.svg" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Adobe font -->
+  <!-- reset.css destyle -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
+  />
+  <!-- favicon -->
+  <link rel="icon" href="[object Object]favicon.svg" />
+  <!-- Google font -->
+  <!-- Adobe font -->
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <!-- swiper css js  -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+    defer
+  ></script>
+  <!-- original css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<!-- End head -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
-      defer
-    ></script>
-    <!-- original css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <!-- End head -->
 
   <body>
     <!-- l-header -->
-    <header class="l-header">
-      <div class="l-header__inner p-header__inner">
-        <h1 class="p-header__logo">
-          <a href="index.html" class="p-header__logo-link"
-            ><img
-              src="./assets/img/common/header-logo-white.svg"
-              alt="石井花壇のロゴ"
-              width="200"
-              height="40"
-              class="p-header__logo-img--before"
-            />
-            <img
-              src="./assets/img/common/header-logo-black.svg"
-              alt="石井花壇のロゴ"
-              width="200"
-              height="40"
-              class="p-header__logo-img--after"
-            />
-          </a>
-        </h1>
-        <nav class="p-header__nav">
-          <ul class="p-header__nav-list">
-            <li class="p-header__nav-list-item">
-              <a href="./room.html">お部屋</a>
-            </li>
-            <li class="p-header__nav-list-item">
-              <a href="./menu.html">お料理</a>
-            </li>
-            <li class="p-header__nav-list-item">
-              <a href="./onsen.html">温泉</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="p-header__btn">宿泊予約</button>
-        <button type="button" id="js-hamburger-trigger" class="p-hamburger">
-          <span class="p-hamburger__line"> </span>
-        </button>
-      </div>
-    </header>
-    <!-- End of l-header -->
+<header class="l-header js-header">
+  <div class="l-header__inner p-header__inner">
+    <h1 class="p-header__logo">
+      <a href="index.html" class="p-header__logo-link"
+        ><img
+          src="./assets/img/common/header-logo-white.svg"
+          alt="石井花壇のロゴ"
+          width="200"
+          height="40"
+          class="p-header__logo-img--before"
+        />
+        <img
+          src="./assets/img/common/header-logo-black.svg"
+          alt="石井花壇のロゴ"
+          width="200"
+          height="40"
+          class="p-header__logo-img--after"
+        />
+      </a>
+    </h1>
+    <nav class="p-header__nav">
+      <ul class="p-header__nav-list">
+        <li class="p-header__nav-list-item">
+          <a href="./room.html">お部屋</a>
+        </li>
+        <li class="p-header__nav-list-item">
+          <a href="./menu.html">お料理</a>
+        </li>
+        <li class="p-header__nav-list-item">
+          <a href="./onsen.html">温泉</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="p-header__btn">宿泊予約</button>
+    <button type="button" id="js-hamburger-trigger" class="p-hamburger">
+      <span class="p-hamburger__line"> </span>
+    </button>
+  </div>
+</header>
+<!-- End of l-header -->
 
     <!-- l-main -->
     <div class="l-main">
@@ -109,7 +113,7 @@
           </h2>
         </div>
         <div class="p-fv__message">
-          <div class="p-fv__message-inner">
+          <div class="p-fv__message-inner" data-aos="fade-up">
             <h3 class="p-fv__message-title">
               <span class="p-fv__message-title--up">温海温泉の</span
               ><br />美しさに癒されて
@@ -138,7 +142,7 @@
       <!-- .p-topics -->
       <div class="p-topics">
         <ul class="p-topics__inner">
-          <li class="p-topics__section">
+          <li class="p-topics__section" data-aos="fade-up">
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic01.jpg"
@@ -164,7 +168,10 @@
               </div>
             </div>
           </li>
-          <li class="p-topics__section p-topics__section--rev">
+          <li
+            class="p-topics__section p-topics__section--rev"
+            data-aos="fade-up"
+          >
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic02.jpg"
@@ -184,11 +191,13 @@
                 あなたの人生史に残る「極上の感動」を お約束します。
               </p>
               <div class="p-topics__btn">
-                <a class="p-topic__btn-link" href="./menu.html">料理について</a>
+                <a class="p-topic__btn-link" href="./menu.html"
+                  >料理について</a
+                >
               </div>
             </div>
           </li>
-          <li class="p-topics__section">
+          <li class="p-topics__section" data-aos="fade-up">
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic03.jpg"
@@ -217,14 +226,17 @@
       </div>
       <!-- End of .p-topics -->
       <!-- .p-plan -->
-      <section class="l-section p-plan">
+      <section class="l-section p-plan" data-aos="fade-up">
         <div class="l-section__inner p-plan__inner">
           <h3 class="c-section-title">おすすめご宿泊プラン</h3>
           <div class="p-plan__list-wrapper">
             <ul class="p-plan__list">
               <li class="p-plan__list-item">
                 <div class="p-plan__list-img">
-                  <img src="./assets/img/top/top-plan01.jpg" alt="" />
+                  <img
+                    src="./assets/img/top/top-plan01.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="p-plan__content">
                   <h4 class="p-plan__list-title">
@@ -239,7 +251,10 @@
               </li>
               <li class="p-plan__list-item">
                 <div class="p-plan__list-img">
-                  <img src="./assets/img/top/top-plan02.jpg" alt="" />
+                  <img
+                    src="./assets/img/top/top-plan02.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="p-plan__content">
                   <h4 class="p-plan__list-title">
@@ -254,7 +269,10 @@
               </li>
               <li class="p-plan__list-item">
                 <div class="p-plan__list-img">
-                  <img src="./assets/img/top/top-plan03.jpg" alt="" />
+                  <img
+                    src="./assets/img/top/top-plan03.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="p-plan__content">
                   <h4 class="p-plan__list-title">
@@ -273,7 +291,7 @@
       <!-- End of .p-plan -->
 
       <!-- .p-news -->
-      <section class="l-section p-news">
+      <section class="l-section p-news" data-aos="fade-up">
         <div class="l-section__inner p-news__inner">
           <h3 class="c-section-title">お知らせ</h3>
           <div class="p-news__body">
@@ -460,7 +478,7 @@
       <!-- End of .p-news -->
 
       <!-- .p-access -->
-      <section class="l-section p-access">
+      <section class="l-section p-access" data-aos="fade-up">
         <div class="l-section__inner p-access__inner">
           <h3 class="c-section-title">アクセス</h3>
           <div class="p-access__body">
@@ -510,54 +528,59 @@
     <!-- End of l-main -->
 
     <!-- l-footer -->
-    <footer class="l-footer">
-      <div class="l-footer__inner">
-        <nav class="p-footer__nav">
-          <ul class="p-footer__nav-list">
-            <li class="p-footer__nav-list-item">
-              <a href="./room.html">お部屋</a>
-            </li>
-            <li class="p-footer__nav-list-item">
-              <a href="./menu.html">お料理</a>
-            </li>
-            <li class="p-footer__nav-list-item">
-              <a href="./onsen.html">温泉</a>
-            </li>
-          </ul>
-        </nav>
+<footer class="l-footer">
+  <div class="l-footer__inner" data-aos="fade-up">
+    <nav class="p-footer__nav">
+      <ul class="p-footer__nav-list">
+        <li class="p-footer__nav-list-item">
+          <a href="./room.html">お部屋</a>
+        </li>
+        <li class="p-footer__nav-list-item">
+          <a href="./menu.html">お料理</a>
+        </li>
+        <li class="p-footer__nav-list-item">
+          <a href="./onsen.html">温泉</a>
+        </li>
+      </ul>
+    </nav>
 
-        <div class="p-footer-logo">
-          <a href="index.html" class="p-footer-logo__link"
-            ><img
-              src="./assets/img/common/footer-logo.svg"
-              alt="ロゴ"
-              width="145"
-              height="92"
-          /></a>
-        </div>
+    <div class="p-footer-logo">
+      <a href="index.html" class="p-footer-logo__link"
+        ><img
+          src="./assets/img/common/footer-logo.svg"
+          alt="ロゴ"
+          width="145"
+          height="92"
+      /></a>
+    </div>
 
-        <div class="p-footer__access-wrapper">
-          <div class="p-footer__access">
-            <p class="p-footer__access-text">〒000-0000</p>
-            <p class="p-footer__access-text p-footer__access-text--wide">
-              山形県鶴岡市xxxxxxxxxxx
-            </p>
-          </div>
-          <div class="p-footer__access">
-            <p class="p-footer__access-text">TEL.000-0000-0000</p>
-            <p class="p-footer__access-text">FAX.00-0000-0000</p>
-          </div>
-        </div>
+    <div class="p-footer__access-wrapper">
+      <div class="p-footer__access">
+        <p class="p-footer__access-text">〒000-0000</p>
+        <p class="p-footer__access-text p-footer__access-text--wide">
+          山形県鶴岡市xxxxxxxxxxx
+        </p>
       </div>
-      <div class="p-footer__copyright-wrapper">
-        <small class="p-footer__copyright"
-          >Copyright © 石井花壇 All Rights Reserved.</small
-        >
+      <div class="p-footer__access">
+        <p class="p-footer__access-text">TEL.000-0000-0000</p>
+        <p class="p-footer__access-text">FAX.00-0000-0000</p>
       </div>
-    </footer>
-    <!-- End of l-footer -->
+    </div>
+  </div>
+  <div class="p-footer__copyright-wrapper">
+    <small class="p-footer__copyright"
+      >Copyright © 石井花壇 All Rights Reserved.</small
+    >
+  </div>
+</footer>
+<!-- End of l-footer -->
+
 
     <!-- original js -->
-    <script type="text/javascript" defer src="./assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      defer
+      src="./assets/js/main.js"
+    ></script>
   </body>
 </html>
