@@ -8,11 +8,6 @@
   <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
   <meta name="title" content="石井花壇 | 温海温泉旅館【公式サイト】" />
   <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。" />
-  <!-- reset.css destyle -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
-  />
   <!-- favicon -->
   <link rel="icon" href="[object Object]favicon.svg" />
   <!-- Google font -->
@@ -23,6 +18,21 @@
     rel="stylesheet"
   />
   <!-- Adobe font -->
+  <!-- reset.css destyle -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
+  />
+  <!-- swiper css js  -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+    defer
+  ></script>
   <!-- original css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -67,11 +77,22 @@
     <div class="l-main">
       <!-- p-fv -->
       <section class="p-fv">
-        <div class="p-fv__img">
-          <img
-            src="./assets/img/top/mainbg01.jpg"
-            alt="頑張る人の頑張らない時間"
-          />
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide p-fv__img">
+              <img src="./assets/img/top/mainbg01.jpg" alt="" />
+            </li>
+            <li class="swiper-slide p-fv__img">
+              <img src="./assets/img/top/mainbg02.jpg" alt="" />
+            </li>
+            <li class="swiper-slide p-fv__img">
+              <img src="./assets/img/top/mainbg03.jpg" alt="" />
+            </li>
+            ...
+          </ul>
+
           <h2 class="p-fv__img-heading">
             <p>頑張る人の<br />頑張らない時間</p>
           </h2>
