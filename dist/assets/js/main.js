@@ -35,12 +35,24 @@
       } else {
         header.classList.remove("is-scrolled");
       }
+    // Topページ ファーストビュー画面切り替え
+    // ------------------------------------------
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      effect: "fade",
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 1000,
     });
   }
 
   {
     // ------------------------------------------
-    // Topページ　お知らせのタブ切り替え
+    // Topページ お知らせのタブ切り替え
     // ------------------------------------------
     const tabBtns = document.querySelectorAll(".js-tab-btn");
     const tabContents = document.querySelectorAll(".js-tab-content");

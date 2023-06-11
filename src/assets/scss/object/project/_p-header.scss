@@ -37,6 +37,9 @@
     transition: all 0.3s;
   }
 }
+.p-header__nav--sub {
+  color: $color-text;
+}
 
 .p-header__nav-list {
   @include responsive(lg, max) {

@@ -1,25 +1,16 @@
 <!-- l-header -->
-<header class="l-header js-header">
+<header class="l-header l-header--sub">
   <div class="l-header__inner p-header__inner">
-    <h1 class="p-header__logo">
+    <div class="p-header__logo">
       <a href="<%= pages.home.link %>" class="p-header__logo-link"
         ><img
-          src="<%= siteInfo.path.img.common %>header-logo-white.svg"
-          alt="石井花壇のロゴ"
-          width="200"
-          height="40"
-          class="p-header__logo-img--before"
-        />
-        <img
           src="<%= siteInfo.path.img.common %>header-logo-black.svg"
           alt="石井花壇のロゴ"
           width="200"
           height="40"
-          class="p-header__logo-img--after"
-        />
-      </a>
-    </h1>
-    <nav class="p-header__nav">
+      /></a>
+    </div>
+    <nav class="p-header__nav p-header__nav--sub">
       <ul class="p-header__nav-list">
         <li class="p-header__nav-list-item">
           <a href="<%= pages.room.link %>">お部屋</a>
@@ -33,7 +24,11 @@
       </ul>
     </nav>
     <button type="button" class="p-header__btn">宿泊予約</button>
-    <button type="button" id="js-hamburger-trigger" class="p-hamburger">
+    <button
+      type="button"
+      id="js-hamburger-trigger"
+      class="p-hamburger p-hamburger--sub"
+    >
       <span class="p-hamburger__line"> </span>
     </button>
   </div>

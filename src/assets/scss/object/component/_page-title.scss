@@ -1,0 +1,28 @@
+@use "../../foundation/_variable" as *;
+
+.p-page-title {
+  @include responsive(lg, max) {
+    height: rem(300px);
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: rem(500px);
+  padding-top: rem(80px);
+}
+
+.p-page-title__bg--room {
+  background: url(../img/room/room-header.jpg) center 80px / cover;
+}
+.p-page-title__bg--menu {
+  background: url(../img/menu/menu-header.jpg) center 80px / cover;
+}
+.p-page-title__bg--onsen {
+  background: url(../img/onsen/onsen-header.jpg) center 80px / cover;
+}
+
+.p-page-title__title {
+  color: $color-base;
+  font-size: rem(34px);
+}

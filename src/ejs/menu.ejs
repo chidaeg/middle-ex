@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./_inc/_head', {meta: pages.menu}) %>
+
+  <body>
+    <%- include('./_inc/_header-sub') %>
+    <!-- l-main -->
+    <div class="l-main">
+      <%- include('./_inc/_page-title', {page: pageTitle.menu}) %>
+      <div class="p-page__body">
+        <%- include('./_inc/_breadcrumbs',{breadcrumbs: pages.menu}) %>
+        <div class="p-page__lead-wrapper">
+          <p class="p-page__lead"><%- pageContent.menu.lead %></p>
+        </div>
+        <div class="p-page__media-wrapper">
+          <%- include('./_inc/_page-content', {items: pageContent.menu.items})
+          %>
+        </div>
+      </div>
+    </div>
+    <!-- End of l-main -->
+
+    <%- include('./_inc/_footer') %>
+
+    <!-- original js -->
+    <script
+      type="text/javascript"
+      defer
+      src="<%= siteInfo.path.js %>main.js"
+    ></script>
+  </body>
+</html>
