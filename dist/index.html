@@ -23,12 +23,18 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
   />
+  <!-- favicon -->
+  <link rel="icon" href="[object Object]favicon.svg" />
+  <!-- Google font -->
+  <!-- Adobe font -->
+  <!-- AOS.js -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <!-- swiper css js  -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
   />
-
   <script
     src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
     defer
@@ -41,7 +47,7 @@
 
   <body>
     <!-- l-header -->
-<header class="l-header">
+<header class="l-header js-header">
   <div class="l-header__inner p-header__inner">
     <h1 class="p-header__logo">
       <a href="index.html" class="p-header__logo-link"
@@ -50,7 +56,16 @@
           alt="石井花壇のロゴ"
           width="200"
           height="40"
-      /></a>
+          class="p-header__logo-img--before"
+        />
+        <img
+          src="./assets/img/common/header-logo-black.svg"
+          alt="石井花壇のロゴ"
+          width="200"
+          height="40"
+          class="p-header__logo-img--after"
+        />
+      </a>
     </h1>
     <nav class="p-header__nav">
       <ul class="p-header__nav-list">
@@ -98,7 +113,7 @@
           </h2>
         </div>
         <div class="p-fv__message">
-          <div class="p-fv__message-inner">
+          <div class="p-fv__message-inner" data-aos="fade-up">
             <h3 class="p-fv__message-title">
               <span class="p-fv__message-title--up">温海温泉の</span
               ><br />美しさに癒されて
@@ -127,7 +142,7 @@
       <!-- .p-topics -->
       <div class="p-topics">
         <ul class="p-topics__inner">
-          <li class="p-topics__section">
+          <li class="p-topics__section" data-aos="fade-up">
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic01.jpg"
@@ -153,7 +168,10 @@
               </div>
             </div>
           </li>
-          <li class="p-topics__section p-topics__section--rev">
+          <li
+            class="p-topics__section p-topics__section--rev"
+            data-aos="fade-up"
+          >
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic02.jpg"
@@ -179,7 +197,7 @@
               </div>
             </div>
           </li>
-          <li class="p-topics__section">
+          <li class="p-topics__section" data-aos="fade-up">
             <div class="p-topics__img">
               <img
                 src="./assets/img/top/top-topic03.jpg"
@@ -208,7 +226,7 @@
       </div>
       <!-- End of .p-topics -->
       <!-- .p-plan -->
-      <section class="l-section p-plan">
+      <section class="l-section p-plan" data-aos="fade-up">
         <div class="l-section__inner p-plan__inner">
           <h3 class="c-section-title">おすすめご宿泊プラン</h3>
           <div class="p-plan__list-wrapper">
@@ -273,7 +291,7 @@
       <!-- End of .p-plan -->
 
       <!-- .p-news -->
-      <section class="l-section p-news">
+      <section class="l-section p-news" data-aos="fade-up">
         <div class="l-section__inner p-news__inner">
           <h3 class="c-section-title">お知らせ</h3>
           <div class="p-news__body">
@@ -460,7 +478,7 @@
       <!-- End of .p-news -->
 
       <!-- .p-access -->
-      <section class="l-section p-access">
+      <section class="l-section p-access" data-aos="fade-up">
         <div class="l-section__inner p-access__inner">
           <h3 class="c-section-title">アクセス</h3>
           <div class="p-access__body">
@@ -511,7 +529,7 @@
 
     <!-- l-footer -->
 <footer class="l-footer">
-  <div class="l-footer__inner">
+  <div class="l-footer__inner" data-aos="fade-up">
     <nav class="p-footer__nav">
       <ul class="p-footer__nav-list">
         <li class="p-footer__nav-list-item">

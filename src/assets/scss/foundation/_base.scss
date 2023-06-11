@@ -7,6 +7,7 @@ body {
   min-width: rem(320px);
   height: 100%;
   margin: 0 auto;
+  overflow-y: scroll;
   background-color: $color-base;
   color: $color-text;
   font-weight: 400;

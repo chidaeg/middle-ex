@@ -23,6 +23,23 @@
 
   {
     // ------------------------------------------
+    // スクロールでヘッダーの色を変える
+    // ------------------------------------------
+    const header = document.querySelector(".l-header");
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        header.classList.add("is-scrolled");
+      } else {
+        header.classList.remove("is-scrolled");
+      }
+    });
+  }
+
+  {
+    // ------------------------------------------
     // Topページ ファーストビュー画面切り替え
     // ------------------------------------------
     const swiper = new Swiper(".swiper", {
@@ -60,6 +77,18 @@
           }
         });
       });
+    });
+  }
+
+  {
+    // ------------------------------------------
+    // AOS.js ふわっと
+    // ------------------------------------------
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-out",
+      delay: 100,
     });
   }
 }

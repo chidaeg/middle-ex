@@ -66,8 +66,14 @@
   }
 }
 
-// 下層ページのボタン色
+// スクロールしたら色が変わる
+.is-scrolled .p-hamburger__line,
+.is-scrolled .p-hamburger__line::before,
+.is-scrolled .p-hamburger__line::after {
+  background-color: $color-text;
+}
 
+// 下層ページのボタン色
 .p-hamburger--sub .p-hamburger__line,
 .p-hamburger--sub .p-hamburger__line::before,
 .p-hamburger--sub .p-hamburger__line::after {

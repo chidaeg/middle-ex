@@ -1,5 +1,5 @@
 <!-- l-header -->
-<header class="l-header">
+<header class="l-header js-header">
   <div class="l-header__inner p-header__inner">
     <h1 class="p-header__logo">
       <a href="<%= pages.home.link %>" class="p-header__logo-link"
@@ -8,7 +8,16 @@
           alt="石井花壇のロゴ"
           width="200"
           height="40"
-      /></a>
+          class="p-header__logo-img--before"
+        />
+        <img
+          src="<%= siteInfo.path.img.common %>header-logo-black.svg"
+          alt="石井花壇のロゴ"
+          width="200"
+          height="40"
+          class="p-header__logo-img--after"
+        />
+      </a>
     </h1>
     <nav class="p-header__nav">
       <ul class="p-header__nav-list">

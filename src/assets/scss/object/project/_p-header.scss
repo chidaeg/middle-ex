@@ -5,11 +5,25 @@
   justify-content: start;
   align-items: center;
 }
+
 .p-header__logo {
   @include responsive(lg, max) {
     width: rem(140px);
   }
 }
+
+.p-header__logo-link {
+  position: relative;
+}
+
+.p-header__logo-img--after {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s all;
+}
+
 .p-header__nav {
   @include responsive(lg, max) {
     position: fixed;
@@ -53,6 +67,7 @@
   background-color: $color-btn;
   line-height: 1;
 }
+
 .p-header__btn::before {
   @include responsive(lg, max) {
     width: rem(18px);
@@ -72,4 +87,21 @@
   @include responsive(lg, max) {
     transform: translateX(0);
   }
+}
+
+// スクロールしたら色が変わる
+.is-scrolled .p-header__nav {
+  color: $color-text;
+}
+
+.is-scrolled .p-header__logo-img {
+  color: $color-text;
+}
+
+.is-scrolled .p-header__logo-img--before {
+  opacity: 0;
+}
+
+.is-scrolled .p-header__logo-img--after {
+  opacity: 1;
 }
