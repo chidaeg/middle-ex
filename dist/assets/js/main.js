@@ -23,7 +23,24 @@
 
   {
     // ------------------------------------------
-    // Topページ　お知らせのタブ切り替え
+    // Topページ ファーストビュー画面切り替え
+    // ------------------------------------------
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      effect: "fade",
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      speed: 2000,
+    });
+  }
+
+  {
+    // ------------------------------------------
+    // Topページ お知らせのタブ切り替え
     // ------------------------------------------
     const tabBtns = document.querySelectorAll(".js-tab-btn");
     const tabContents = document.querySelectorAll(".js-tab-content");
