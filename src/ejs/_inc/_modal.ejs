@@ -1,0 +1,50 @@
+<!-- p-modal -->
+<div class="p-modal">
+  <form action="" method="post">
+    <p class="p-modal__item">
+      <label class="p-modal__label">
+        お名前
+        <input type="text" name="name" placeholder="例：石井正悟" />
+      </label>
+    </p>
+    <p class="p-modal__item">
+      <label class="p-modal__label">
+        メールアドレス
+        <input
+          type="email"
+          name="email"
+          placeholder="例：Example@example.com"
+        />
+      </label>
+    </p>
+    <p class="p-modal__item">
+      ご希望プラン（空いているプランのみ表示されます）
+      <select
+        class="p-modal__label"
+        name="plan"
+        placeholder="プランを選択してください"
+      >
+        <option value="unselected">プランを選択してください</option>
+        <option value="plan01">
+          【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+        </option>
+        <option value="plan02">平日に優雅に楽しむ、特別宿泊プラン</option>
+        <option value="plan03">
+          絶景貸切露天と個室会席を満喫できるファミリープラン
+        </option>
+      </select>
+    </p>
+    <p class="p-modal__item">
+      日時選択
+      <label class="p-modal__label">
+        <input
+          type="text"
+          name="datepicker"
+          id="js-datepicker"
+          placeholder="日時を選択してください"
+        />
+      </label>
+    </p>
+  </form>
+</div>
+<!-- End of .p-modal -->
