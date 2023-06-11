@@ -1,1 +1,13 @@
 @use "../../foundation/_variable" as *;
+
+.c-breadcrumbs__list {
+  display: flex;
+}
+
+.c-breadcrumbs__list > * + * {
+  display: flex;
+}
+.c-breadcrumbs__list > * + * ::before {
+  margin: 0 rem(8px);
+  content: "＞";
+}

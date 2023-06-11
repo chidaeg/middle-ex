@@ -1,12 +1,38 @@
 <!-- breadcrumbs -->
 <div class="c-breadcrumbs-wrapper">
-  <ul class="c-breadcrumbs__list">
+  <!-- JSON-LDでの構造化データマークアップ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "<%= pages.home.name %>",
+          "item": "<%= pages.home.link %>"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "<%= breadcrumbs.name %>",
+          "item": "<%= breadcrumbs.link %>"
+        }
+      ]
+    }
+  </script>
+
+  <ol class="c-breadcrumbs__list">
     <li class="c-breadcrumbs__list-item">
-      <a href="" class="c-breadcrumbs__list-link">Top</a>
+      <a href="<%= pages.home.link %>" class="c-breadcrumbs__list-link"
+        ><%= pages.home.name %></a
+      >
     </li>
     <li class="c-breadcrumbs__list-item">
-      <a href="" class="c-breadcrumbs__list-link">content</a>
+      <a href="<%= breadcrumbs.link %>" class="c-breadcrumbs__list-link"
+        ><%= breadcrumbs.name %></a
+      >
     </li>
-  </ul>
+  </ol>
 </div>
 <!-- End of breadcrumbs -->
