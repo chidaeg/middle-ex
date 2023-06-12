@@ -7,11 +7,12 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  line-height: 1;
 
   gap: rem(34px);
 }
 .p-footer__nav-list-item {
-  letter-spacing: 1em;
+  letter-spacing: 0.75em;
 
   writing-mode: vertical-rl;
 }
@@ -20,7 +21,7 @@
   @include responsive(lg, max) {
     margin-top: rem(48px);
   }
-  margin-top: rem(96px);
+  margin-top: rem(84px);
 }
 .p-footer-logo img {
   margin: 0 auto;
@@ -29,7 +30,7 @@
   @include responsive(lg, max) {
     margin-top: rem(32px);
   }
-  margin-top: rem(72px);
+  margin-top: rem(62px);
 }
 
 .p-footer__access {
@@ -38,7 +39,7 @@
   }
   display: flex;
   justify-content: center;
-  margin-top: rem(21px);
+  margin-top: rem(8px);
 
   gap: rem(21px);
 }

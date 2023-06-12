@@ -112,7 +112,7 @@ a:hover img {
 
 .l-section__inner {
   width: 100%;
-  max-width: 75rem;
+  max-width: 76.25rem;
   margin: 0 auto;
   padding: 3.75rem 1.25rem 0;
 }
@@ -131,7 +131,7 @@ a:hover img {
   width: 100%;
   max-width: 23.75rem;
   margin: 0 auto;
-  padding: 4rem 1.25rem 3.8125rem;
+  padding: 4rem 1.25rem 3.25rem;
 }
 @media screen and (max-width: 1023px) {
   .l-footer__inner {
@@ -426,18 +426,19 @@ a:hover img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  line-height: 1;
   gap: 2.125rem;
 }
 
 .p-footer__nav-list-item {
-  letter-spacing: 1em;
+  letter-spacing: 0.75em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
 }
 
 .p-footer-logo {
-  margin-top: 6rem;
+  margin-top: 5.25rem;
 }
 @media screen and (max-width: 1023px) {
   .p-footer-logo {
@@ -450,7 +451,7 @@ a:hover img {
 }
 
 .p-footer__access-wrapper {
-  margin-top: 4.5rem;
+  margin-top: 3.875rem;
 }
 @media screen and (max-width: 1023px) {
   .p-footer__access-wrapper {
@@ -465,7 +466,7 @@ a:hover img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 1.3125rem;
+  margin-top: 0.5rem;
   gap: 1.3125rem;
 }
 @media screen and (max-width: 1023px) {
@@ -550,14 +551,14 @@ a:hover img {
 
 .p-fv__img-heading {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 66%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #ffffff;
   font-size: 2.125rem;
   line-height: 2.5;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -598,9 +599,9 @@ a:hover img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-width: 62.5rem;
+  max-width: 66.25rem;
   margin: 0 auto;
-  padding: 9.3125rem 2.5rem 7.5rem;
+  padding: 9.3125rem 2.5rem 5.625rem;
 }
 @media screen and (max-width: 767px) {
   .p-fv__message-inner {
@@ -617,7 +618,7 @@ a:hover img {
 .p-fv__message-title {
   font-size: 1.75rem;
   line-height: 2.17;
-  letter-spacing: 0.7em;
+  letter-spacing: 0.5em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -634,7 +635,7 @@ a:hover img {
 }
 
 .p-fv__message-title--up {
-  margin-top: -5.9375rem;
+  margin-top: -5.25rem;
 }
 
 .p-fv__message-text {
@@ -656,6 +657,8 @@ a:hover img {
 }
 
 .p-fv__message-name {
+  margin-left: 5.625rem;
+  padding-bottom: 1.875rem;
   font-size: 1.375rem;
   letter-spacing: 0.4em;
   text-align: right;
@@ -686,7 +689,7 @@ a:hover img {
           flex-direction: column;
   max-width: 100rem;
   margin: 0 auto;
-  padding: 6.625rem 1.25rem 4.875rem;
+  padding: 6.375rem 1.25rem 4.875rem;
   gap: 7.625rem;
 }
 
@@ -783,7 +786,7 @@ a:hover img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.875rem 0.625rem 6.25rem;
+  padding: 1.25rem 0 8.125rem;
 }
 @media screen and (max-width: 1023px) {
   .p-topics__content {
@@ -796,7 +799,8 @@ a:hover img {
 }
 
 .p-topics__section--rev .p-topics__content {
-  width: 18.75rem;
+  width: 20.5rem;
+  padding: 2.375rem 0 6.875rem;
 }
 @media screen and (max-width: 1023px) {
   .p-topics__section--rev .p-topics__content {
@@ -853,7 +857,7 @@ a:hover img {
 }
 
 .p-plan__inner {
-  padding: 3.75rem 1.25rem 9rem;
+  padding: 3.75rem 1.25rem 8.625rem;
 }
 
 .p-plan__list {
@@ -863,7 +867,7 @@ a:hover img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 4.125rem;
+  margin-top: 3.125rem;
   gap: 7.8%;
 }
 @media screen and (max-width: 1023px) {
@@ -884,7 +888,7 @@ a:hover img {
 }
 
 .p-plan__content {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 @media screen and (max-width: 1023px) {
   .p-plan__content {
@@ -898,13 +902,21 @@ a:hover img {
 }
 
 .p-plan__list-text {
-  margin-top: 2.25rem;
+  margin-top: 1.375rem;
 }
 @media screen and (max-width: 1023px) {
   .p-plan__list-text {
     width: 90%;
     margin: 1.25rem auto 0;
   }
+}
+
+.p-plan__list-img img {
+  aspect-ratio: 331/209;
+}
+
+.p-plan__list-img img {
+  width: 100%;
 }
 
 .p-news {
@@ -922,7 +934,7 @@ a:hover img {
 }
 
 .p-news__body {
-  margin-top: 2.875rem;
+  margin-top: 1.125rem;
 }
 
 .p-news__tab {
@@ -935,7 +947,7 @@ a:hover img {
 
 .p-news__tab-content {
   display: none;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .p-news__cards {
@@ -989,7 +1001,7 @@ a:hover img {
 }
 
 .p-news__card-text {
-  margin-top: 0.625rem;
+  margin-top: 0.25rem;
 }
 
 .is-active.p-news__tab-btn {
@@ -997,11 +1009,11 @@ a:hover img {
 }
 
 .p-access {
-  background: url("../img/top/bg-white-large.jpg");
+  background: url("../img/top/bg-white-large.jpg") center/contain;
 }
 
 .p-access__inner {
-  max-width: 75rem;
+  max-width: 76.25rem;
   margin: 0 auto;
   padding-bottom: 6.875rem;
 }
@@ -1010,7 +1022,7 @@ a:hover img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5.25rem;
+  margin-top: 4.375rem;
   gap: 5.1875rem;
 }
 @media screen and (max-width: 1023px) {
@@ -1036,16 +1048,32 @@ a:hover img {
   }
 }
 
+.p-access__info-img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  aspect-ratio: 656/370;
+}
+
+.p-access__info-note {
+  margin-right: -30%;
+}
+@media screen and (max-width: 1023px) {
+  .p-access__info-note {
+    margin-right: 0;
+  }
+}
+
 .p-access__map {
   width: 100%;
+  max-width: 49.5rem;
+  margin: 0 auto;
   margin-top: 4.3125rem;
-  text-align: center;
-  aspect-ratio: 16/9;
+  aspect-ratio: 792/592;
 }
 
 .p-access__map iframe {
   width: 100%;
-  max-width: 49.5rem;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
