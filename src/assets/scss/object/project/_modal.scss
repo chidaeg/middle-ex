@@ -46,6 +46,11 @@
 
 // モーダル背景本体
 .p-modal {
+  @include responsive(lg, max) {
+    width: 95%;
+    margin: 0 auto;
+    padding: rem(29px) rem(20px) rem(40px);
+  }
   display: block;
   display: none;
   position: fixed;
@@ -86,6 +91,9 @@
 }
 
 .p-modal__form {
+  @include responsive(lg, max) {
+    margin-top: rem(24px);
+  }
   width: 100%;
   margin-top: rem(36px);
   font-size: rem(14px);
@@ -137,6 +145,9 @@
 }
 
 .p-modal__submit-btn {
+  @include responsive(lg, max) {
+    margin-top: rem(36px);
+  }
   display: block;
   width: rem(198px);
   margin: 0 auto;

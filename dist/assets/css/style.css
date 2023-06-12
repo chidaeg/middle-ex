@@ -1361,6 +1361,13 @@ a:hover img {
   background-color: #ffffff;
   color: #000000;
 }
+@media screen and (max-width: 1023px) {
+  .p-modal {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.8125rem 1.25rem 2.5rem;
+  }
+}
 
 .p-modal__close-btn {
   display: block;
@@ -1395,6 +1402,11 @@ a:hover img {
   margin-top: 2.25rem;
   font-size: 0.875rem;
   line-height: 1;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__form {
+    margin-top: 1.5rem;
+  }
 }
 
 .p-modal__form > * + * {
@@ -1450,6 +1462,11 @@ a:hover img {
   text-align: center;
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__submit-btn {
+    margin-top: 2.25rem;
+  }
 }
 
 .p-modal__submit-btn:hover {
