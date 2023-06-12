@@ -1,6 +1,36 @@
 @use "../../foundation/_variable" as *;
 
+// モーダル開閉のボタン（宿泊予約ボタン）
+.p-modal__btn {
+  @include responsive(lg, max) {
+    padding: rem(10px) rem(15px);
+    font-size: rem(14px);
+  }
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: rem(19px) rem(37px);
+  background-color: $color-btn;
+  line-height: 1;
+}
+
+.p-modal__btn::before {
+  @include responsive(lg, max) {
+    width: rem(18px);
+    height: rem(18px);
+  }
+  display: block;
+  width: rem(22px);
+  height: rem(22px);
+  margin-right: rem(10px);
+  background: url("../img/common/icon-calendar.svg") no-repeat center
+    center/contain;
+  content: "";
+}
+
+// モーダル背景マスク
 .p-modal__mask {
+  display: none;
   opacity: 0.3;
   position: fixed;
   top: 0;
@@ -10,9 +40,14 @@
   z-index: 100;
   background-color: $color-base;
 }
+.l-header--sub .p-modal__mask {
+  background-color: $color-text;
+}
 
+// モーダル背景本体
 .p-modal {
   display: block;
+  display: none;
   position: fixed;
   top: 50vh;
   left: 50%;
@@ -22,6 +57,32 @@
   padding: rem(29px) rem(60px) rem(90px);
   background-color: $color-base;
   color: $color-text;
+}
+
+.p-modal__close-btn {
+  display: block;
+  position: absolute;
+  top: rem(20px);
+  right: rem(22px);
+  width: rem(18px);
+  height: rem(18px);
+  background-color: transparent;
+}
+
+.p-modal__close-btn-bar {
+  display: block;
+  position: absolute;
+  width: rem(25px);
+  height: rem(3px);
+  background-color: #707070;
+}
+
+.p-modal__close-btn-bar:first-child {
+  transform: rotate(-45deg);
+}
+
+.p-modal__close-btn-bar:last-child {
+  transform: rotate(45deg);
 }
 
 .p-modal__form {
@@ -89,4 +150,12 @@
   border: 1px solid $color-btn;
   background-color: $color-btn;
   color: $color-base;
+}
+
+// モーダルを開いたとき時
+.is-open.p-modal {
+  display: block;
+}
+.is-open.p-modal__mask {
+  display: block;
 }

@@ -388,40 +388,6 @@ a:hover img {
   }
 }
 
-.p-header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  padding: 1.1875rem 2.3125rem;
-  background-color: #978f10;
-  line-height: 1;
-}
-@media screen and (max-width: 1023px) {
-  .p-header__btn {
-    padding: 0.625rem 0.9375rem;
-    font-size: 0.875rem;
-  }
-}
-
-.p-header__btn::before {
-  display: block;
-  width: 1.375rem;
-  height: 1.375rem;
-  margin-right: 0.625rem;
-  background: url("../img/common/icon-calendar.svg") no-repeat center center/contain;
-  content: "";
-}
-@media screen and (max-width: 1023px) {
-  .p-header__btn::before {
-    width: 1.125rem;
-    height: 1.125rem;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .is-open .p-header__nav {
     -webkit-transform: translateX(0);
@@ -1331,7 +1297,42 @@ a:hover img {
   }
 }
 
+.p-modal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  padding: 1.1875rem 2.3125rem;
+  background-color: #978f10;
+  line-height: 1;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__btn {
+    padding: 0.625rem 0.9375rem;
+    font-size: 0.875rem;
+  }
+}
+
+.p-modal__btn::before {
+  display: block;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 0.625rem;
+  background: url("../img/common/icon-calendar.svg") no-repeat center center/contain;
+  content: "";
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__btn::before {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
 .p-modal__mask {
+  display: none;
   opacity: 0.3;
   position: fixed;
   top: 0;
@@ -1342,8 +1343,13 @@ a:hover img {
   background-color: #ffffff;
 }
 
+.l-header--sub .p-modal__mask {
+  background-color: #000000;
+}
+
 .p-modal {
   display: block;
+  display: none;
   position: fixed;
   top: 50vh;
   left: 50%;
@@ -1354,6 +1360,34 @@ a:hover img {
   padding: 1.8125rem 3.75rem 5.625rem;
   background-color: #ffffff;
   color: #000000;
+}
+
+.p-modal__close-btn {
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  background-color: transparent;
+}
+
+.p-modal__close-btn-bar {
+  display: block;
+  position: absolute;
+  width: 1.5625rem;
+  height: 0.1875rem;
+  background-color: #707070;
+}
+
+.p-modal__close-btn-bar:first-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.p-modal__close-btn-bar:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .p-modal__form {
@@ -1422,6 +1456,14 @@ a:hover img {
   border: 1px solid #978f10;
   background-color: #978f10;
   color: #ffffff;
+}
+
+.is-open.p-modal {
+  display: block;
+}
+
+.is-open.p-modal__mask {
+  display: block;
 }
 
 @media screen and (max-width: 1023px) {
