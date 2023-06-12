@@ -21,6 +21,7 @@
   width: rem(550px);
   padding: rem(29px) rem(60px) rem(90px);
   background-color: $color-base;
+  color: $color-text;
 }
 
 .p-modal__form {
@@ -82,4 +83,10 @@
   padding: rem(13px) rem(10px);
   border: solid 1px #707070;
   text-align: center;
+  transition: color 0.3s, background-color 0.3s;
+}
+.p-modal__submit-btn:hover {
+  border: 1px solid $color-btn;
+  background-color: $color-btn;
+  color: $color-base;
 }

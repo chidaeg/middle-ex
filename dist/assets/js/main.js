@@ -91,6 +91,14 @@
       delay: 100,
     });
   }
+  {
+    // ------------------------------------------
+    // 宿泊予約モーダル表示・非表示
+    // ------------------------------------------
+    const modal = document.querySelector(".p-modal");
+    const modal_btn = document.querySelector(".p-header__btn");
+    const mask = document.querySelector(".p-modal__mask");
+  }
 
   {
     // ------------------------------------------
