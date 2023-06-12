@@ -69,7 +69,7 @@
   display: block;
   position: absolute;
   top: 0;
-  left: -40%;
+  left: -41%;
   z-index: -1;
   width: 140%;
   height: 100%;
@@ -111,14 +111,15 @@
   @include responsive(lg, max) {
     margin-top: rem(28px);
   }
-  margin-top: calc(rem(52px) - rem(16px));
+  margin-top: rem(44px);
 }
 
 .p-media__note {
   @include responsive(lg, max) {
     margin-top: rem(28px);
   }
-  margin-top: calc(rem(52px) - rem(7px));
+  margin-top: rem(40px);
+  padding-left: rem(4px);
   font-size: rem(14px);
   line-height: 1.5;
 }
