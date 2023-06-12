@@ -45,17 +45,18 @@
     font-size: max(rem(28px), 4.4vw);
   }
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 66%;
   transform: translateY(-50%);
   color: $color-base;
   font-size: rem(34px);
   line-height: 2.5;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 
   writing-mode: vertical-rl;
 }
 
+// メッセージ欄
 .p-fv__message {
   display: flex;
   justify-content: center;
@@ -76,9 +77,9 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 100%;
-  max-width: rem(1000px);
+  max-width: rem(1060px);
   margin: 0 auto;
-  padding: rem(149px) rem(40px) rem(120px);
+  padding: rem(149px) rem(40px) rem(90px);
 }
 
 .p-fv__message-title {
@@ -91,13 +92,13 @@
   }
   font-size: rem(28px);
   line-height: 2.17;
-  letter-spacing: 0.7em;
+  letter-spacing: 0.5em;
 
   writing-mode: vertical-rl;
 }
 
 .p-fv__message-title--up {
-  margin-top: rem(-95px);
+  margin-top: rem(-84px);
 }
 
 .p-fv__message-text {
@@ -120,6 +121,8 @@
 
     writing-mode: horizontal-tb;
   }
+  margin-left: rem(90px);
+  padding-bottom: rem(30px);
   font-size: rem(22px);
   letter-spacing: 0.4em;
   text-align: right;
