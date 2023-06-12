@@ -55,33 +55,6 @@
   gap: rem(30px);
 }
 
-.p-header__btn {
-  @include responsive(lg, max) {
-    padding: rem(10px) rem(15px);
-    font-size: rem(14px);
-  }
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: rem(19px) rem(37px);
-  background-color: $color-btn;
-  line-height: 1;
-}
-
-.p-header__btn::before {
-  @include responsive(lg, max) {
-    width: rem(18px);
-    height: rem(18px);
-  }
-  display: block;
-  width: rem(22px);
-  height: rem(22px);
-  margin-right: rem(10px);
-  background: url("../img/common/icon-calendar.svg") no-repeat center
-    center/contain;
-  content: "";
-}
-
 // spメニューopenのとき
 .is-open .p-header__nav {
   @include responsive(lg, max) {

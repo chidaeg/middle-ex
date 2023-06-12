@@ -20,8 +20,7 @@
 @use "./object/component/section-title";
 @use "./object/component/page-title";
 @use "./object/component/breadcrumbs";
-// @use "./object/component/search";
-// @use "./object/component/label";
+
 /*-------------------
 * project
 -------------------*/
@@ -35,6 +34,7 @@
 @use "./object/project/access";
 @use "./object/project/page-content";
 @use "./object/project/media";
+@use "./object/project/modal";
 
 /*-------------------
 * Utility

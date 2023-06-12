@@ -388,40 +388,6 @@ a:hover img {
   }
 }
 
-.p-header__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  padding: 1.1875rem 2.3125rem;
-  background-color: #978f10;
-  line-height: 1;
-}
-@media screen and (max-width: 1023px) {
-  .p-header__btn {
-    padding: 0.625rem 0.9375rem;
-    font-size: 0.875rem;
-  }
-}
-
-.p-header__btn::before {
-  display: block;
-  width: 1.375rem;
-  height: 1.375rem;
-  margin-right: 0.625rem;
-  background: url("../img/common/icon-calendar.svg") no-repeat center center/contain;
-  content: "";
-}
-@media screen and (max-width: 1023px) {
-  .p-header__btn::before {
-    width: 1.125rem;
-    height: 1.125rem;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .is-open .p-header__nav {
     -webkit-transform: translateX(0);
@@ -1329,6 +1295,192 @@ a:hover img {
   .p-media__note {
     margin-top: 1.75rem;
   }
+}
+
+.p-modal__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  padding: 1.1875rem 2.3125rem;
+  background-color: #978f10;
+  line-height: 1;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__btn {
+    padding: 0.625rem 0.9375rem;
+    font-size: 0.875rem;
+  }
+}
+
+.p-modal__btn::before {
+  display: block;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 0.625rem;
+  background: url("../img/common/icon-calendar.svg") no-repeat center center/contain;
+  content: "";
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__btn::before {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}
+
+.p-modal__mask {
+  display: none;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+}
+
+.l-header--sub .p-modal__mask {
+  background-color: #000000;
+}
+
+.p-modal {
+  display: block;
+  display: none;
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  z-index: 120;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 34.375rem;
+  padding: 1.8125rem 3.75rem 5.625rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1.8125rem 1.25rem 2.5rem;
+  }
+}
+
+.p-modal__close-btn {
+  display: block;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.375rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  background-color: transparent;
+}
+
+.p-modal__close-btn-bar {
+  display: block;
+  position: absolute;
+  width: 1.5625rem;
+  height: 0.1875rem;
+  background-color: #707070;
+}
+
+.p-modal__close-btn-bar:first-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.p-modal__close-btn-bar:last-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.p-modal__form {
+  width: 100%;
+  margin-top: 2.25rem;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__form {
+    margin-top: 1.5rem;
+  }
+}
+
+.p-modal__form > * + * {
+  margin-top: 0.875rem;
+}
+
+.p-modal__title {
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.p-modal__label {
+  display: block;
+}
+
+.p-modal__input {
+  display: block;
+  width: 100%;
+  margin-top: 0.875rem;
+  padding: 0.5625rem 0.625rem;
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select {
+  display: block;
+  width: 100%;
+  margin-top: 0.875rem;
+  padding: 0.5625rem 0.625rem;
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select:invalid {
+  color: #797878;
+}
+
+.p-modal__select option {
+  color: #000000;
+}
+
+.p-modal__select option:first-child {
+  color: #797878;
+}
+
+.p-modal__submit-btn {
+  display: block;
+  width: 12.375rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0.8125rem 0.625rem;
+  border: solid 1px #707070;
+  text-align: center;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+@media screen and (max-width: 1023px) {
+  .p-modal__submit-btn {
+    margin-top: 2.25rem;
+  }
+}
+
+.p-modal__submit-btn:hover {
+  border: 1px solid #978f10;
+  background-color: #978f10;
+  color: #ffffff;
+}
+
+.is-open.p-modal {
+  display: block;
+}
+
+.is-open.p-modal__mask {
+  display: block;
 }
 
 @media screen and (max-width: 1023px) {

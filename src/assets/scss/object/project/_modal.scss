@@ -1,0 +1,172 @@
+@use "../../foundation/_variable" as *;
+
+// モーダル開閉のボタン（宿泊予約ボタン）
+.p-modal__btn {
+  @include responsive(lg, max) {
+    padding: rem(10px) rem(15px);
+    font-size: rem(14px);
+  }
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: rem(19px) rem(37px);
+  background-color: $color-btn;
+  line-height: 1;
+}
+
+.p-modal__btn::before {
+  @include responsive(lg, max) {
+    width: rem(18px);
+    height: rem(18px);
+  }
+  display: block;
+  width: rem(22px);
+  height: rem(22px);
+  margin-right: rem(10px);
+  background: url("../img/common/icon-calendar.svg") no-repeat center
+    center/contain;
+  content: "";
+}
+
+// モーダル背景マスク
+.p-modal__mask {
+  display: none;
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $color-base;
+}
+.l-header--sub .p-modal__mask {
+  background-color: $color-text;
+}
+
+// モーダル背景本体
+.p-modal {
+  @include responsive(lg, max) {
+    width: 95%;
+    margin: 0 auto;
+    padding: rem(29px) rem(20px) rem(40px);
+  }
+  display: block;
+  display: none;
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  z-index: 120;
+  transform: translate(-50%, -50%);
+  width: rem(550px);
+  padding: rem(29px) rem(60px) rem(90px);
+  background-color: $color-base;
+  color: $color-text;
+}
+
+.p-modal__close-btn {
+  display: block;
+  position: absolute;
+  top: rem(20px);
+  right: rem(22px);
+  width: rem(18px);
+  height: rem(18px);
+  background-color: transparent;
+}
+
+.p-modal__close-btn-bar {
+  display: block;
+  position: absolute;
+  width: rem(25px);
+  height: rem(3px);
+  background-color: #707070;
+}
+
+.p-modal__close-btn-bar:first-child {
+  transform: rotate(-45deg);
+}
+
+.p-modal__close-btn-bar:last-child {
+  transform: rotate(45deg);
+}
+
+.p-modal__form {
+  @include responsive(lg, max) {
+    margin-top: rem(24px);
+  }
+  width: 100%;
+  margin-top: rem(36px);
+  font-size: rem(14px);
+  line-height: 1;
+}
+
+.p-modal__form > * + * {
+  margin-top: rem(14px);
+}
+
+.p-modal__title {
+  padding-bottom: rem(30px);
+  border-bottom: 1px solid #e7e7e7;
+  font-size: rem(20px);
+  text-align: center;
+}
+
+.p-modal__item {
+  // font-size: 12px;
+}
+
+.p-modal__label {
+  display: block;
+}
+.p-modal__input {
+  display: block;
+  width: 100%;
+  margin-top: rem(14px);
+  padding: rem(9px) rem(10px);
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select {
+  display: block;
+  width: 100%;
+  margin-top: rem(14px);
+  padding: rem(9px) rem(10px);
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select:invalid {
+  color: #797878;
+}
+.p-modal__select option {
+  color: $color-text;
+}
+.p-modal__select option:first-child {
+  color: #797878;
+}
+
+.p-modal__submit-btn {
+  @include responsive(lg, max) {
+    margin-top: rem(36px);
+  }
+  display: block;
+  width: rem(198px);
+  margin: 0 auto;
+  margin-top: rem(64px);
+  padding: rem(13px) rem(10px);
+  border: solid 1px #707070;
+  text-align: center;
+  transition: color 0.3s, background-color 0.3s;
+}
+.p-modal__submit-btn:hover {
+  border: 1px solid $color-btn;
+  background-color: $color-btn;
+  color: $color-base;
+}
+
+// モーダルを開いたとき時
+.is-open.p-modal {
+  display: block;
+}
+.is-open.p-modal__mask {
+  display: block;
+}

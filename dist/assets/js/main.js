@@ -91,4 +91,38 @@
       delay: 100,
     });
   }
+  {
+    // ------------------------------------------
+    // 宿泊予約モーダル表示・非表示
+    // ------------------------------------------
+    const modal = document.querySelector(".p-modal");
+    const modal_btn = document.querySelector(".p-modal__btn");
+    const mask = document.querySelector(".p-modal__mask");
+    const close_btn = document.querySelector(".p-modal__close-btn");
+
+    modal_btn.addEventListener("click", () => {
+      modal.classList.add("is-open");
+      mask.classList.add("is-open");
+    });
+    mask.addEventListener("click", () => {
+      modal.classList.remove("is-open");
+      mask.classList.remove("is-open");
+    });
+    close_btn.addEventListener("click", () => {
+      modal.classList.remove("is-open");
+      mask.classList.remove("is-open");
+    });
+  }
+
+  {
+    // ------------------------------------------
+    // flatpickr モーダル日付カレンダー選択
+    // ------------------------------------------
+    flatpickr("#js-datepicker", {
+      locale: "ja",
+      dateFormat: "Y.m.d（D）",
+      minDate: "today",
+      mode: "range",
+    });
+  }
 }
