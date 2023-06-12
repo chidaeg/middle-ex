@@ -1,16 +1,25 @@
 <!-- p-modal -->
+<div class="p-modal__mask"></div>
 <div class="p-modal">
-  <form action="" method="post">
+  <p class="p-modal__title">宿泊予約</p>
+  <!-- End of  -->
+  <form action="" method="post" class="p-modal__form">
     <p class="p-modal__item">
       <label class="p-modal__label">
         お名前
-        <input type="text" name="name" placeholder="例：石井正悟" />
+        <input
+          class="p-modal__input"
+          type="text"
+          name="name"
+          placeholder="例：石井正悟"
+        />
       </label>
     </p>
     <p class="p-modal__item">
       <label class="p-modal__label">
         メールアドレス
         <input
+          class="p-modal__input"
           type="email"
           name="email"
           placeholder="例：Example@example.com"
@@ -20,11 +29,12 @@
     <p class="p-modal__item">
       ご希望プラン（空いているプランのみ表示されます）
       <select
-        class="p-modal__label"
+        class="p-modal__label p-modal__select"
         name="plan"
         placeholder="プランを選択してください"
+        required
       >
-        <option value="unselected">プランを選択してください</option>
+        <option value="">プランを選択してください</option>
         <option value="plan01">
           【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
         </option>
@@ -38,13 +48,15 @@
       日時選択
       <label class="p-modal__label">
         <input
-          type="text"
+          class="p-modal__input"
           name="datepicker"
           id="js-datepicker"
           placeholder="日時を選択してください"
+          value=""
         />
       </label>
     </p>
+    <button type="submit" class="p-modal__submit-btn">送信する</button>
   </form>
 </div>
 <!-- End of .p-modal -->

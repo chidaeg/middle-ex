@@ -1,1 +1,85 @@
 @use "../../foundation/_variable" as *;
+
+.p-modal__mask {
+  opacity: 0.3;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $color-base;
+}
+
+.p-modal {
+  display: block;
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  z-index: 120;
+  transform: translate(-50%, -50%);
+  width: rem(550px);
+  padding: rem(29px) rem(60px) rem(90px);
+  background-color: $color-base;
+}
+
+.p-modal__form {
+  width: 100%;
+  margin-top: rem(36px);
+  font-size: rem(14px);
+  line-height: 1;
+}
+
+.p-modal__form > * + * {
+  margin-top: rem(14px);
+}
+
+.p-modal__title {
+  padding-bottom: rem(30px);
+  border-bottom: 1px solid #e7e7e7;
+  font-size: rem(20px);
+  text-align: center;
+}
+
+.p-modal__item {
+  // font-size: 12px;
+}
+
+.p-modal__label {
+  display: block;
+}
+.p-modal__input {
+  display: block;
+  width: 100%;
+  margin-top: rem(14px);
+  padding: rem(9px) rem(10px);
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select {
+  display: block;
+  width: 100%;
+  margin-top: rem(14px);
+  padding: rem(9px) rem(10px);
+  border: 1px solid #e7e7e7;
+}
+
+.p-modal__select:invalid {
+  color: #797878;
+}
+.p-modal__select option {
+  color: $color-text;
+}
+.p-modal__select option:first-child {
+  color: #797878;
+}
+
+.p-modal__submit-btn {
+  display: block;
+  width: rem(198px);
+  margin: 0 auto;
+  margin-top: rem(64px);
+  padding: rem(13px) rem(10px);
+  border: solid 1px #707070;
+  text-align: center;
+}

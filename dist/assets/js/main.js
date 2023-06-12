@@ -99,7 +99,6 @@
     flatpickr("#js-datepicker", {
       locale: "ja",
       dateFormat: "Y.m.d（D）",
-      defaultDate: new Date(),
       minDate: "today",
       mode: "range",
     });
