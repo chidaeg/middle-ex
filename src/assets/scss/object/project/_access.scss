@@ -21,9 +21,7 @@
 
   gap: rem(83px);
 }
-.p-access__info-img {
-  margin-left: rem(127px);
-}
+
 .p-access__info-content {
   @include responsive(lg, max) {
     max-width: rem(600px);
@@ -34,10 +32,22 @@
 }
 
 .p-access__info-img {
+  @include responsive(lg, max) {
+    min-width: initial;
+    margin: 0 auto;
+  }
   min-width: rem(450px);
+  margin-left: rem(127px);
   overflow: hidden;
 
   aspect-ratio: 656 / 370;
+}
+
+.p-access__info-note {
+  @include responsive(lg, max) {
+    font-size: rem(14px);
+    line-height: 1.44;
+  }
 }
 
 .p-access__map {
