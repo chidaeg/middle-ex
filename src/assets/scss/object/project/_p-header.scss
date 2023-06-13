@@ -13,6 +13,9 @@
 }
 
 .p-header__logo-link--top:hover .p-header__logo-img--after {
+  @include responsive(lg, max) {
+    opacity: initial;
+  }
   opacity: 0;
 }
 
@@ -21,10 +24,16 @@
 }
 
 .p-header__logo-img--after {
+  @include responsive(lg, max) {
+    top: rem(16px);
+    left: rem(16px);
+    width: rem(140px);
+  }
   opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: rem(20px);
+  left: rem(20px);
+  z-index: 1;
   transition: 0.3s all;
 }
 
@@ -76,10 +85,19 @@
   color: $color-text;
 }
 
-.is-scrolled .p-header__logo-img--before {
-  opacity: 0;
-}
-
 .is-scrolled .p-header__logo-img--after {
   opacity: 1;
+  // z-index: 130;
+}
+
+.is-scrolled .p-header__logo-img--before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.is-scrolled .p-header__logo-link--top:hover .p-header__logo-img--after {
+  @include responsive(lg, max) {
+    opacity: initial;
+  }
+  opacity: 0.6;
 }

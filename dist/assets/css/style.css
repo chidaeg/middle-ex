@@ -334,6 +334,11 @@ a:hover img {
 .p-header__logo-link--top:hover .p-header__logo-img--after {
   opacity: 0;
 }
+@media screen and (max-width: 1023px) {
+  .p-header__logo-link--top:hover .p-header__logo-img--after {
+    opacity: initial;
+  }
+}
 
 .p-header__logo-link {
   position: relative;
@@ -341,11 +346,19 @@ a:hover img {
 
 .p-header__logo-img--after {
   opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 1;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+@media screen and (max-width: 1023px) {
+  .p-header__logo-img--after {
+    top: 1rem;
+    left: 1rem;
+    width: 8.75rem;
+  }
 }
 
 .p-header__nav {
@@ -407,12 +420,22 @@ a:hover img {
   color: #000000;
 }
 
-.is-scrolled .p-header__logo-img--before {
-  opacity: 0;
-}
-
 .is-scrolled .p-header__logo-img--after {
   opacity: 1;
+}
+
+.is-scrolled .p-header__logo-img--before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.is-scrolled .p-header__logo-link--top:hover .p-header__logo-img--after {
+  opacity: 0.6;
+}
+@media screen and (max-width: 1023px) {
+  .is-scrolled .p-header__logo-link--top:hover .p-header__logo-img--after {
+    opacity: initial;
+  }
 }
 
 .p-footer__nav {
