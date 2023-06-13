@@ -72,6 +72,10 @@
 }
 
 .p-news__card-text {
+  @include responsive(lg, max) {
+    margin-top: rem(8px);
+    line-height: 1.44;
+  }
   margin-top: rem(4px);
 }
 
