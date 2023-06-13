@@ -48,25 +48,6 @@
   }
 }
 
-// spメニューopenの時
-.is-open .p-hamburger__line {
-  @include responsive(lg, max) {
-    background-color: transparent;
-  }
-}
-
-.is-open .p-hamburger__line::before {
-  @include responsive(lg, max) {
-    transform: translateY(2px) rotate(45deg);
-  }
-}
-
-.is-open .p-hamburger__line::after {
-  @include responsive(lg, max) {
-    transform: translateY(0) rotate(-45deg);
-  }
-}
-
 // スクロールしたら色が変わる
 .is-scrolled .p-hamburger__line,
 .is-scrolled .p-hamburger__line::before,
@@ -79,4 +60,25 @@
 .p-hamburger--sub .p-hamburger__line::before,
 .p-hamburger--sub .p-hamburger__line::after {
   background-color: $color-text;
+}
+
+// spメニューopenの時
+.is-open .p-hamburger__line {
+  @include responsive(lg, max) {
+    background-color: transparent;
+  }
+}
+
+.is-open .p-hamburger__line::before {
+  @include responsive(lg, max) {
+    transform: translateY(2px) rotate(45deg);
+    background-color: $color-base;
+  }
+}
+
+.is-open .p-hamburger__line::after {
+  @include responsive(lg, max) {
+    transform: translateY(0) rotate(-45deg);
+    background-color: $color-base;
+  }
 }
