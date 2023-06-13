@@ -9,7 +9,20 @@
   <!-- noindex -->
   <meta name="robots" content="noindex" />
   <!-- favicon -->
-  <link rel="icon" href="<%= siteInfo.path.img %>favicon.svg" />
+  <link rel="icon" href="<%= siteInfo.path.img.common %>favicon.svg" />
+  <!-- OGP -->
+  <meta property="og:title" content="<%= meta.title %>" />
+  <meta property="og:description" content="<%= meta.description %>" />
+  <meta property="og:type" content="<%= meta.type %>" />
+  <meta property="og:url" content="<%= siteInfo.siteUrl %><%= meta.url %>" />
+  <meta
+    property="og:image"
+    content="<%= siteInfo.path.img.top %>mainbg03.jpg"
+  />
+  <meta property="og:site_name" content="<%= siteInfo.name %>" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@chiaki86257695" />
   <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +36,6 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.min.css"
   />
-  <!-- favicon -->
-  <link rel="icon" href="<%= siteInfo.path.img.common %>favicon.svg" />
   <!-- Google font -->
   <!-- Adobe font -->
   <!-- AOS.js -->
