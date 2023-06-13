@@ -25,7 +25,7 @@ body {
   overflow-y: scroll;
   background-color: #ffffff;
   color: #000000;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 2;
   font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
@@ -179,6 +179,7 @@ a:hover img {
   width: 100%;
   height: 36.25rem;
   padding-top: 5rem;
+  font-weight: bold;
 }
 @media screen and (max-width: 1023px) {
   .p-page-title {
@@ -347,6 +348,9 @@ a:hover img {
   transition: 0.3s all;
 }
 
+.p-header__nav {
+  font-weight: bold;
+}
 @media screen and (max-width: 1023px) {
   .p-header__nav {
     position: fixed;
@@ -556,6 +560,7 @@ a:hover img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #ffffff;
+  font-weight: bold;
   font-size: 2.125rem;
   line-height: 2.5;
   letter-spacing: 0.2em;
@@ -1348,6 +1353,7 @@ a:hover img {
   margin-left: auto;
   padding: 1rem 2.3125rem;
   background-color: #978f10;
+  font-weight: bold;
   line-height: 1;
 }
 @media screen and (max-width: 1023px) {
