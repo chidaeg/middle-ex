@@ -1,15 +1,34 @@
 @use "../foundation/_variable" as *;
 
 .l-header {
-    width: 100%;
+  @include responsive(lg, max) {
+    height: rem(60px);
+  }
+  // z-index: 120;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: rem(80px);
+  background-color: transparent;
+  color: $color-base;
+  transition: background-color 0.3s;
+}
+
+.l-header--sub {
+  background-color: $color-base;
 }
 
 .l-header__inner {
-    @include responsive(lg, max) {
-        padding: 0 rem(16px);
-    }
-    width: 100%;
-    max-width: rem(1200px);
-    margin: 0 auto;
-    padding: 0 rem(20px);
+  @include responsive(lg, max) {
+    padding: 0 rem(16px);
+  }
+  width: 100%;
+  max-width: rem(1920px);
+  margin: 0 auto;
+  padding: 0 rem(20px);
+}
+// スクロールしたら色が変わる
+.is-scrolled.l-header {
+  background-color: $color-base;
 }

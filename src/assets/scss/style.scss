@@ -17,18 +17,24 @@
 /*-------------------
 * component
 -------------------*/
-@use "./object/component/btn";
 @use "./object/component/section-title";
-@use "./object/component/search";
-@use "./object/component/label";
+@use "./object/component/page-title";
 @use "./object/component/breadcrumbs";
+
 /*-------------------
 * project
 -------------------*/
-@use "./object/project/fv";
 @use "./object/project/hamburger";
 @use "./object/project/p-header";
 @use "./object/project/p-footer";
+@use "./object/project/fv";
+@use "./object/project/topics";
+@use "./object/project/plan";
+@use "./object/project/news";
+@use "./object/project/access";
+@use "./object/project/page-content";
+@use "./object/project/media";
+@use "./object/project/modal";
 
 /*-------------------
 * Utility

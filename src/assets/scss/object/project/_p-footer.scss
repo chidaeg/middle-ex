@@ -1,1 +1,61 @@
 @use "../../foundation/_variable" as *;
+
+.p-footer__nav {
+  font-size: rem(18px);
+}
+.p-footer__nav-list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  line-height: 1;
+
+  gap: rem(34px);
+}
+.p-footer__nav-list-item {
+  letter-spacing: 0.75em;
+
+  writing-mode: vertical-rl;
+}
+
+.p-footer-logo {
+  @include responsive(lg, max) {
+    margin-top: rem(48px);
+  }
+  margin-top: rem(84px);
+}
+.p-footer-logo img {
+  margin: 0 auto;
+}
+.p-footer__access-wrapper {
+  @include responsive(lg, max) {
+    margin-top: rem(32px);
+  }
+  margin-top: rem(62px);
+}
+
+.p-footer__access {
+  @include responsive(lg, max) {
+    font-size: rem(14px);
+  }
+  display: flex;
+  justify-content: center;
+  margin-top: rem(8px);
+
+  gap: rem(21px);
+}
+.p-footer__access:first-child {
+  margin-top: 0;
+}
+.p-footer__access-text--wide {
+  letter-spacing: 0.18em;
+}
+
+.p-footer__copyright-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: rem(60px);
+  background-color: $color-text;
+  color: $color-base;
+}

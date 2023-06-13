@@ -1,17 +1,17 @@
 // colors
 $color-base: #ffffff;
-$color-text: #333333;
-$color-main: #999999;
-
-
+$color-text: #000000;
+$color-btn: #978f10;
+$color-gray: #f6f6f6;
 
 //font-sizeのrem化
 @function rem($px, $basepx: 16px) {
-    @return calc($px / $basepx * 1rem);
+  @return calc($px / $basepx * 1rem);
 }
 
 // font-family
-$font-yugothic: "Yu Gothic Medium", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+$font-yumincho: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Noto Serif JP",
+  serif;
 
 // レスポンシブ
 $mq-breakpoints: (
@@ -21,19 +21,18 @@ $mq-breakpoints: (
   "lg": 1024px,
   "xl": 1280px,
   "xxl": 1920px,
-  ) !default;
+) !default;
 
 @mixin responsive($breakpoint: md, $rule: min) {
-    $breakpoint: map-get($mq-breakpoints, $breakpoint
-    );
+  $breakpoint: map-get($mq-breakpoints, $breakpoint);
 
-    @if $rule ==max {
-        $breakpoint: $breakpoint - 1px;
-    }
+  @if $rule ==max {
+    $breakpoint: $breakpoint - 1px;
+  }
 
-    @media screen and (#{$rule}-width: $breakpoint) {
-        @content;
-    }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
 }
 
 // // 使う時（max-width）
@@ -47,5 +46,19 @@ $mq-breakpoints: (
 //   }
 // }
 
-
 // z-index
+.l-header {
+  z-index: 120;
+}
+.p-header__nav {
+  @include responsive(lg, max) {
+    z-index: 100;
+  }
+}
+.p-hamburger {
+  z-index: 100;
+}
+
+.p-fv__img-heading {
+  z-index: 10;
+}

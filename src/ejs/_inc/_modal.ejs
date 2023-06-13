@@ -1,0 +1,66 @@
+<!-- p-modal -->
+<button type="button" class="p-modal__btn">宿泊予約</button>
+<div class="p-modal__mask"></div>
+<div class="p-modal">
+  <p class="p-modal__title">宿泊予約</p>
+  <button class="p-modal__close-btn">
+    <span class="p-modal__close-btn-bar"></span>
+    <span class="p-modal__close-btn-bar"></span>
+  </button>
+  <form action="" method="post" class="p-modal__form">
+    <p class="p-modal__item">
+      <label class="p-modal__label">
+        お名前
+        <input
+          class="p-modal__input"
+          type="text"
+          name="name"
+          placeholder="例：石井正悟"
+        />
+      </label>
+    </p>
+    <p class="p-modal__item">
+      <label class="p-modal__label">
+        メールアドレス
+        <input
+          class="p-modal__input"
+          type="email"
+          name="email"
+          placeholder="例：Example@example.com"
+        />
+      </label>
+    </p>
+    <p class="p-modal__item">
+      ご希望プラン（空いているプランのみ表示されます）
+      <select
+        class="p-modal__label p-modal__select"
+        name="plan"
+        placeholder="プランを選択してください"
+        required
+      >
+        <option value="">プランを選択してください</option>
+        <option value="plan01">
+          【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+        </option>
+        <option value="plan02">平日に優雅に楽しむ、特別宿泊プラン</option>
+        <option value="plan03">
+          絶景貸切露天と個室会席を満喫できるファミリープラン
+        </option>
+      </select>
+    </p>
+    <p class="p-modal__item">
+      日時選択
+      <label class="p-modal__label">
+        <input
+          class="p-modal__input"
+          name="datepicker"
+          id="js-datepicker"
+          placeholder="日時を選択してください"
+          value=""
+        />
+      </label>
+    </p>
+    <button type="submit" class="p-modal__submit-btn">送信する</button>
+  </form>
+</div>
+<!-- End of .p-modal -->

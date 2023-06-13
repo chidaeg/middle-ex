@@ -1,11 +1,451 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./_inc/_head') %>
+  <%- include('./_inc/_head',{meta: pages.home}) %>
 
   <body>
     <%- include('./_inc/_header') %>
     <!-- l-main -->
-    <div class="l-main"></div>
+    <div class="l-main">
+      <!-- p-fv -->
+      <section class="p-fv">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide p-fv__img">
+              <img src="<%= siteInfo.path.img.top %>mainbg01.jpg" alt="" />
+            </li>
+            <li class="swiper-slide p-fv__img">
+              <img src="<%= siteInfo.path.img.top %>mainbg02.jpg" alt="" />
+            </li>
+            <li class="swiper-slide p-fv__img">
+              <img src="<%= siteInfo.path.img.top %>mainbg03.jpg" alt="" />
+            </li>
+            ...
+          </ul>
+
+          <h2 class="p-fv__img-heading">頑張る人の<br />頑張らない時間</h2>
+        </div>
+
+        <div class="p-fv__message">
+          <div class="p-fv__message-inner" data-aos="fade-up">
+            <h3 class="p-fv__message-title">
+              <span class="p-fv__message-title--up">温海温泉の</span
+              ><br />美しさに癒やされて
+            </h3>
+            <p class="p-fv__message-text">
+              東北の奥座敷である温海温泉郷<br />
+              開湯は約１３００年前とされ、役小角が<br />
+              発見したと伝えられます
+            </p>
+            <p class="p-fv__message-text">
+              石井花壇は江戸より続く由緒ある旅館で<br />
+              クラシックな作りの中に大正ロマンあふれる<br />
+              内装を残しております
+            </p>
+            <p class="p-fv__message-text">
+              圧倒的な癒しの空間で<br />
+              頑張る現代人に<br />
+              頑張らない圧倒的な非日常をご提供します
+            </p>
+            <p class="p-fv__message-name">石井花壇</p>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-fv -->
+
+      <!-- .p-topics -->
+      <div class="p-topics">
+        <ul class="p-topics__inner">
+          <li class="p-topics__section" data-aos="fade-up">
+            <div class="p-topics__img">
+              <img
+                src="<%= siteInfo.path.img.top %>top-topic01.jpg"
+                alt=""
+                width="1050"
+                height="545"
+              />
+            </div>
+            <div class="p-topics__content">
+              <p class="p-topics__title">
+                喧騒から離れた空間<br />
+                心落ち着く至極のひととき
+              </p>
+              <p class="p-topics__text">
+                まるで時が止まったかのような、圧倒的な静寂のなかで、<br />
+                ひたすらにゆったりと…。<br />
+                最高級の「何もしない時間」をお過ごしください。
+              </p>
+              <div class="p-topics__btn">
+                <a class="p-topic__btn-link" href="<%= pages.room.link %>"
+                  >お部屋について</a
+                >
+              </div>
+            </div>
+          </li>
+          <li
+            class="p-topics__section p-topics__section--rev"
+            data-aos="fade-up"
+          >
+            <div class="p-topics__img">
+              <img
+                src="<%= siteInfo.path.img.top %>top-topic02.jpg"
+                alt=""
+                width="1050"
+                height="545"
+              />
+            </div>
+            <div class="p-topics__content">
+              <p class="p-topics__title">
+                出迎えるのは<br />
+                極上の温海料理
+              </p>
+              <p class="p-topics__text">
+                最も旬の食材を愉しむ、最高の贅沢を
+                最高級A5ランクの米沢牛と共に頂く。<br />
+                あなたの人生史に残る「極上の感動」を お約束します。
+              </p>
+              <div class="p-topics__btn">
+                <a class="p-topic__btn-link" href="<%= pages.menu.link %>"
+                  >料理について</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="p-topics__section" data-aos="fade-up">
+            <div class="p-topics__img">
+              <img
+                src="<%= siteInfo.path.img.top %>top-topic03.jpg"
+                alt=""
+                width="1050"
+                height="545"
+              />
+            </div>
+            <div class="p-topics__content">
+              <p class="p-topics__title">
+                疲れ切った身体にやすらぎを<br />
+                温海の源泉に癒やされて
+              </p>
+              <p class="p-topics__text">
+                古くは弘法大師の病をも治療したと言われる温海の泉質。<br />
+                現代人の疲弊しきった身体を修復する最高級の湯治場としてご活用ください。
+              </p>
+              <div class="p-topics__btn">
+                <a class="p-topic__btn-link" href="<%= pages.onsen.link %>"
+                  >温泉について</a
+                >
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- End of .p-topics -->
+      <!-- .p-plan -->
+      <section class="l-section p-plan" data-aos="fade-up">
+        <div class="l-section__inner p-plan__inner">
+          <h3 class="c-section-title">おすすめご宿泊プラン</h3>
+          <div class="p-plan__list-wrapper">
+            <ul class="p-plan__list">
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan01.jpg"
+                    alt=""
+                    width="331"
+                    height="209"
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    朝食付きプラン、日本近海で取れた のどぐろを朝食として…
+                  </h4>
+                  <p class="p-plan__list-text">
+                    最高級と称されるのどぐろ、正式には「アカ
+                    ムツ」と呼ばれる魚、味は独特の上品な味わ
+                    いで、焼いても煮ても美味
+                  </p>
+                </div>
+              </li>
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan02.jpg"
+                    alt=""
+                    width="331"
+                    height="209"
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    【期間限定】温海蟹をたっぷりと 愉しむプラン。
+                  </h4>
+                  <p class="p-plan__list-text">
+                    温海で水揚げされた蟹は「温海蟹」
+                    として知られ、嗜好品として愛されて
+                    きました。この宿泊プランでは存分に
+                  </p>
+                </div>
+              </li>
+              <li class="p-plan__list-item">
+                <div class="p-plan__list-img">
+                  <img
+                    src="<%= siteInfo.path.img.top %>top-plan03.jpg"
+                    alt=""
+                    width="331"
+                    height="209"
+                  />
+                </div>
+                <div class="p-plan__content">
+                  <h4 class="p-plan__list-title">
+                    【平日限定】贅沢美味懐石プラン。 海辺の四季旬彩プラン。
+                  </h4>
+                  <p class="p-plan__list-text">
+                    温海近海で取れた魚を鮮度そのままに舟盛りに
+                    してご提供。生きた味をお楽しみください。
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-plan -->
+
+      <!-- .p-news -->
+      <section class="l-section p-news" data-aos="fade-up">
+        <div class="l-section__inner p-news__inner">
+          <h3 class="c-section-title">お知らせ</h3>
+          <div class="p-news__body">
+            <div class="p-news__tab">
+              <button
+                class="p-news__tab-btn js-tab-btn is-active"
+                data-tab="sales"
+              >
+                営業情報
+              </button>
+              <button class="p-news__tab-btn js-tab-btn" data-tab="others">
+                その他
+              </button>
+            </div>
+
+            <div
+              class="p-news__tab-content js-tab-content"
+              id="sales"
+              style="display: block"
+            >
+              <ul class="p-news__cards">
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      年末最後の営業日は27日になります。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">年末最後の営業日のお知らせ</p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      12.21は臨時休業とさせていただきますので、よろしくお願いします。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      年末最後の営業日は27日になります。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      和室の改装を行いますため、12.10はお休みさせていただきます。
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">年末最後の営業日のお知らせ</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-news__tab-content js-tab-content" id="others">
+              <ul class="p-news__cards">
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-24" class="p-news__card-date"
+                      >2022.12.24</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-21" class="p-news__card-date"
+                      >2022.12.21</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプランまもなく終了します！
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-16" class="p-news__card-date"
+                      >2022.12.16</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-15" class="p-news__card-date"
+                      >2022.12.15</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプラン好評です！
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news01.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-10" class="p-news__card-date"
+                      >2022.12.10</time
+                    >
+                    <p class="p-news__card-text">
+                      【平日限定】贅沢美味懐石プランがおすすめです
+                    </p>
+                  </div>
+                </li>
+                <li class="p-news__card">
+                  <div class="p-news__card-img">
+                    <img src="<%= siteInfo.path.img.top %>news02.jpg" alt="" />
+                  </div>
+                  <div class="p-news__card-content">
+                    <time datetime="2022-12-2" class="p-news__card-date"
+                      >2022.12.02</time
+                    >
+                    <p class="p-news__card-text">
+                      【期間限定】温海蟹をたっぷりと愉しむプラン始まりました！
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-news -->
+
+      <!-- .p-access -->
+      <section class="l-section p-access" data-aos="fade-up">
+        <div class="l-section__inner p-access__inner">
+          <h3 class="c-section-title">アクセス</h3>
+          <div class="p-access__body">
+            <div class="p-access__info">
+              <div class="p-access__info-img">
+                <img
+                  src="<%= siteInfo.path.img.top %>acess.jpg"
+                  alt=""
+                  width="656"
+                  height="370"
+                />
+              </div>
+              <div class="p-access__info-content">
+                <dl class="p-access__info-list">
+                  <dt class="p-access__info-name">住所</dt>
+                  <dd class="p-access__info-text">
+                    〒000-0000<br />山形県鶴岡市xxxxxxxxxx
+                  </dd>
+                  <dt class="p-access__info-name">TEL/FAX</dt>
+                  <dd class="p-access__info-text">
+                    000-0000-0000/00-0000-0000
+                  </dd>
+                  <dt class="p-access__info-name">営業時間</dt>
+                  <dd class="p-access__info-text">14:00-23:00</dd>
+                </dl>
+                <p class="p-access__info-note">
+                  ＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、ご連絡ください。
+                </p>
+              </div>
+            </div>
+            <div class="p-access__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24933.857963577273!2d139.59856044999998!3d38.63204035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1686292009036!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of .p-access -->
+    </div>
     <!-- End of l-main -->
 
     <%- include('./_inc/_footer') %>

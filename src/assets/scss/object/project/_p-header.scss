@@ -1,1 +1,103 @@
 @use "../../foundation/_variable" as *;
+
+.p-header__inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.p-header__logo {
+  @include responsive(lg, max) {
+    width: rem(140px);
+  }
+}
+
+.p-header__logo-link--top:hover .p-header__logo-img--after {
+  @include responsive(lg, max) {
+    opacity: initial;
+  }
+  opacity: 0;
+}
+
+.p-header__logo-link {
+  position: relative;
+}
+
+.p-header__logo-img--after {
+  @include responsive(lg, max) {
+    top: rem(16px);
+    left: rem(16px);
+    width: rem(140px);
+  }
+  opacity: 0;
+  position: fixed;
+  top: rem(20px);
+  left: rem(20px);
+  z-index: 1;
+  transition: 0.3s all;
+}
+
+.p-header__nav {
+  @include responsive(lg, max) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // z-index: 100;
+    transform: translateX(100%);
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.8);
+    transition: all 0.3s;
+  }
+  font-weight: bold;
+}
+.p-header__nav--sub {
+  color: $color-text;
+}
+
+.p-header__nav-list {
+  @include responsive(lg, max) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: rem(100px) rem(20px) rem(20px);
+    color: $color-base;
+  }
+  display: flex;
+  margin-left: min(120px, 10vw);
+
+  gap: rem(30px);
+}
+
+// spメニューopenのとき
+.is-open .p-header__nav {
+  @include responsive(lg, max) {
+    transform: translateX(0);
+  }
+}
+
+// スクロールしたら色が変わる
+.is-scrolled .p-header__nav {
+  color: $color-text;
+}
+
+.is-scrolled .p-header__logo-img {
+  color: $color-text;
+}
+
+.is-scrolled .p-header__logo-img--after {
+  opacity: 1;
+  // z-index: 130;
+}
+
+.is-scrolled .p-header__logo-img--before {
+  opacity: 0;
+  z-index: 0;
+}
+
+.is-scrolled .p-header__logo-link--top:hover .p-header__logo-img--after {
+  @include responsive(lg, max) {
+    opacity: initial;
+  }
+  opacity: 0.6;
+}
